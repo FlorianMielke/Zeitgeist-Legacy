@@ -10,10 +10,10 @@
 		1729A65320641C40003EDAB5 /* PeriodTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729A65220641C40003EDAB5 /* PeriodTest.swift */; };
 		1729A65520641C63003EDAB5 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729A65420641C63003EDAB5 /* Period.swift */; };
 		1729A65720641D38003EDAB5 /* DurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729A65620641D38003EDAB5 /* DurationTest.swift */; };
-		1729A65920641DDC003EDAB5 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729A65820641DDC003EDAB5 /* Date+Helpers.swift */; };
 		1729A65C20643C60003EDAB5 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729A65B20643C60003EDAB5 /* Travel.swift */; };
 		17515A7020640392003CB03B /* Zeitgeist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17515A6620640392003CB03B /* Zeitgeist.framework */; };
 		17515A81206403A5003CB03B /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17515A80206403A5003CB03B /* Time.swift */; };
+		178389052065690B00FA4EB6 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729A65820641DDC003EDAB5 /* Date+Helpers.swift */; };
 		17B8EEBA206407B300D2724E /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8EEB9206407B300D2724E /* Duration.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,14 +60,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1729A65A20641DE1003EDAB5 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				1729A65820641DDC003EDAB5 /* Date+Helpers.swift */,
-			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
 		17515A5C20640392003CB03B = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				17B8EEB9206407B300D2724E /* Duration.swift */,
-				1729A65A20641DE1003EDAB5 /* Helpers */,
 				1729A65420641C63003EDAB5 /* Period.swift */,
 				17B8EEB72064070000D2724E /* Supporting Files */,
 				17515A80206403A5003CB03B /* Time.swift */,
@@ -102,11 +93,20 @@
 			isa = PBXGroup;
 			children = (
 				1729A65620641D38003EDAB5 /* DurationTest.swift */,
+				178389062065691200FA4EB6 /* Helpers */,
 				1729A65220641C40003EDAB5 /* PeriodTest.swift */,
 				17B8EEB82064070B00D2724E /* Supporting Files */,
 				1729A65B20643C60003EDAB5 /* Travel.swift */,
 			);
 			path = ZeitgeistTests;
+			sourceTree = "<group>";
+		};
+		178389062065691200FA4EB6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1729A65820641DDC003EDAB5 /* Date+Helpers.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		17B8EEB72064070000D2724E /* Supporting Files */ = {
@@ -235,7 +235,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				17515A81206403A5003CB03B /* Time.swift in Sources */,
-				1729A65920641DDC003EDAB5 /* Date+Helpers.swift in Sources */,
 				1729A65520641C63003EDAB5 /* Period.swift in Sources */,
 				17B8EEBA206407B300D2724E /* Duration.swift in Sources */,
 			);
@@ -246,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1729A65C20643C60003EDAB5 /* Travel.swift in Sources */,
+				178389052065690B00FA4EB6 /* Date+Helpers.swift in Sources */,
 				1729A65320641C40003EDAB5 /* PeriodTest.swift in Sources */,
 				1729A65720641D38003EDAB5 /* DurationTest.swift in Sources */,
 			);
