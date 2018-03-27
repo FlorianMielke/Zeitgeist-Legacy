@@ -13,6 +13,7 @@ public enum Weekday: Int {
 public class Time: Equatable, Hashable, Comparable {
     let date: Date
     let calendar: Calendar
+    let timeZone: TimeZone
     
     public static var current: Time {
         get {
@@ -20,9 +21,33 @@ public class Time: Equatable, Hashable, Comparable {
         }
     }
     
-    init(date: Date = Date(), calendar: Calendar = Calendar.current) {
+    public var year: Int {
+        get {
+            return component(.year)
+        }
+    }
+    
+    public var month: Int {
+        get {
+            return component(.month)
+        }
+    }
+    
+    init(date: Date = Date(), calendar: Calendar = Calendar.current, timeZone: TimeZone = TimeZone.current) {
         self.date = date
         self.calendar = calendar
+        self.timeZone = timeZone
+    }
+    
+    init(year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int) {
+        self.calendar = Calendar.current
+        self.timeZone = TimeZone.current
+        let component = DateComponents(year: year, month: month, day: day, hour: hour, minute: minute, second: second)
+        self.date = calendar.date(from: component)!
+    }
+    
+    func component(_ component: Calendar.Component) -> Int {
+        return calendar.component(component, from: date)
     }
     
     public static func <(lhs: Time, rhs: Time) -> Bool {
