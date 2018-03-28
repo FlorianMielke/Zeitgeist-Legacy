@@ -14,12 +14,7 @@ public class Time: Equatable, Hashable, Comparable {
     let date: Date
     let calendar: Calendar
     let timeZone: TimeZone
-    
-    public static var current: Time {
-        get {
-            return Time()
-        }
-    }
+    public static let current = Time()
     
     public var year: Int {
         get {
