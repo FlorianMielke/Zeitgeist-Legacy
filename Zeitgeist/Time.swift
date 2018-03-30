@@ -10,7 +10,7 @@ public enum Weekday: Int {
     case sunday
 }
 
-public class Time: Equatable, Hashable, Comparable {
+public struct Time: Equatable, Hashable, Comparable {
     let date: Date
     let calendar: Calendar
     let timeZone: TimeZone
@@ -28,17 +28,22 @@ public class Time: Equatable, Hashable, Comparable {
         }
     }
     
-    init(date: Date = Date(), calendar: Calendar = Calendar.current, timeZone: TimeZone = TimeZone.current) {
+    public var day: Int {
+        get {
+            return component(.day)
+        }
+    }
+    
+    init(date: Date = Date(), timeZone: TimeZone = TimeZone.current) {
         self.date = date
-        self.calendar = calendar
+        self.calendar = Calendar.current
         self.timeZone = timeZone
     }
     
-    init(year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int) {
-        self.calendar = Calendar.current
-        self.timeZone = TimeZone.current
+    init(_ year: Int, _ month: Int, _ day: Int, _ hour: Int = 0, _ minute: Int = 0, _ second: Int = 0) {
         let component = DateComponents(year: year, month: month, day: day, hour: hour, minute: minute, second: second)
-        self.date = calendar.date(from: component)!
+        let date = Calendar.current.date(from: component)!
+        self.init(date: date)
     }
     
     func component(_ component: Calendar.Component) -> Int {
