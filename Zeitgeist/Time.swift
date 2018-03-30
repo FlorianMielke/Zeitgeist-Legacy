@@ -16,24 +16,6 @@ public struct Time: Equatable, Hashable, Comparable {
     let timeZone: TimeZone
     public static let current = Time()
     
-    public var year: Int {
-        get {
-            return component(.year)
-        }
-    }
-    
-    public var month: Int {
-        get {
-            return component(.month)
-        }
-    }
-    
-    public var day: Int {
-        get {
-            return component(.day)
-        }
-    }
-    
     init(date: Date = Date(), timeZone: TimeZone = TimeZone.current) {
         self.date = date
         self.calendar = Calendar.current
@@ -46,10 +28,6 @@ public struct Time: Equatable, Hashable, Comparable {
         self.init(date: date)
     }
     
-    func component(_ component: Calendar.Component) -> Int {
-        return calendar.component(component, from: date)
-    }
-    
     public static func <(lhs: Time, rhs: Time) -> Bool {
         return lhs.date < rhs.date
     }
@@ -60,5 +38,36 @@ public struct Time: Equatable, Hashable, Comparable {
     
     public var hashValue: Int {
         return date.hashValue ^ calendar.hashValue &* 16777619
+    }
+}
+
+// MARK: Components
+extension Time {
+    public var year: Int {
+        return component(.year)
+    }
+    
+    public var month: Int {
+        return component(.month)
+    }
+    
+    public var day: Int {
+        return component(.day)
+    }
+
+    public var hour: Int {
+        return component(.hour)
+    }
+
+    public var minute: Int {
+        return component(.minute)
+    }
+
+    public var second: Int {
+        return component(.second)
+    }
+
+    func component(_ component: Calendar.Component) -> Int {
+        return calendar.component(component, from: date)
     }
 }
