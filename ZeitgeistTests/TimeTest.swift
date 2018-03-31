@@ -12,4 +12,16 @@ class TimeTest: XCTestCase {
         XCTAssertEqual(4, time.minute)
         XCTAssertEqual(15, time.second)
     }
+    
+    func testBefore() {
+        XCTAssertTrue(Time(2018, 3, 10).isBefore(Time(2018, 3, 11)))
+        XCTAssertFalse(Time(2018, 3, 10).isBefore(Time(2018, 3, 9)))
+        XCTAssertFalse(Time(2018, 3, 10).isBefore(Time(2018, 3, 10)))
+    }
+
+    func testAfter() {
+        XCTAssertTrue(Time(2018, 3, 10).isAfter(Time(2018, 3, 9)))
+        XCTAssertFalse(Time(2018, 3, 10).isAfter(Time(2018, 3, 11)))
+        XCTAssertFalse(Time(2018, 3, 10).isAfter(Time(2018, 3, 10)))
+    }
 }

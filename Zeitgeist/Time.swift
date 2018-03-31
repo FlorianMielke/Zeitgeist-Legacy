@@ -28,6 +28,14 @@ public struct Time: Equatable, Hashable, Comparable {
         self.init(date: date)
     }
     
+    public func isBefore(_ other: Time) -> Bool {
+        return self < other
+    }
+
+    public func isAfter(_ other: Time) -> Bool {
+        return self > other
+    }
+
     public static func <(lhs: Time, rhs: Time) -> Bool {
         return lhs.date < rhs.date
     }
