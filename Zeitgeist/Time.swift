@@ -39,14 +39,6 @@ public struct Time: Equatable, Hashable, Comparable {
     public static func <(lhs: Time, rhs: Time) -> Bool {
         return lhs.date < rhs.date
     }
-
-    public static func == (lhs: Time, rhs: Time) -> Bool {
-        return lhs.date == rhs.date && lhs.calendar == rhs.calendar
-    }
-    
-    public var hashValue: Int {
-        return date.hashValue ^ calendar.hashValue &* 16777619
-    }
 }
 
 // MARK: Components
