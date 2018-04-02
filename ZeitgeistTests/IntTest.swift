@@ -37,6 +37,7 @@ class IntTest: XCTestCase {
     // MARK: Rounded
     
     func testItRoundsUp() {
+        XCTAssertEqual(5, 5.roundedUp(to: 0))
         XCTAssertEqual(0, 0.roundedUp(to: 5))
         XCTAssertEqual(5, 1.roundedUp(to: 5))
         XCTAssertEqual(5, 5.roundedUp(to: 5))
@@ -46,6 +47,7 @@ class IntTest: XCTestCase {
     }
     
     func testItRoundsDown() {
+        XCTAssertEqual(5, 5.roundedDown(to: 0))
         XCTAssertEqual(0, 0.roundedDown(to: 5))
         XCTAssertEqual(0, 1.roundedDown(to: 5))
         XCTAssertEqual(5, 5.roundedDown(to: 5))

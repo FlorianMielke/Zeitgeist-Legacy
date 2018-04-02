@@ -22,6 +22,9 @@ public extension Int {
 // MARK: Rounding
 public extension Int {
     func roundedUp(to roundTo: Int) -> Int {
+        guard roundTo > 0 else {
+            return self
+        }
         let remainder = self % roundTo
         if (remainder == 0) {
             return self
@@ -30,6 +33,9 @@ public extension Int {
     }
 
     func roundedDown(to roundTo: Int) -> Int {
+        guard roundTo > 0 else {
+            return self
+        }
         let remainder = self % roundTo
         return self - remainder
     }
