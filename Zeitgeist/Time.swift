@@ -16,13 +16,13 @@ public struct Time: Equatable, Hashable, Comparable {
     let timeZone: TimeZone
     public static let current = Time()
     
-    init(date: Date = Date(), timeZone: TimeZone = TimeZone.current) {
+    public init(date: Date = Date(), timeZone: TimeZone = TimeZone.current) {
         self.date = date
         self.calendar = Calendar.current
         self.timeZone = timeZone
     }
     
-    init(_ year: Int, _ month: Int, _ day: Int, _ hour: Int = 0, _ minute: Int = 0, _ second: Int = 0) {
+    public init(_ year: Int, _ month: Int, _ day: Int, _ hour: Int = 0, _ minute: Int = 0, _ second: Int = 0) {
         let component = DateComponents(year: year, month: month, day: day, hour: hour, minute: minute, second: second)
         let date = Calendar.current.date(from: component)!
         self.init(date: date)
@@ -42,7 +42,7 @@ public struct Time: Equatable, Hashable, Comparable {
 }
 
 // MARK: Components
-extension Time {
+public  extension Time {
     public var year: Int {
         return component(.year)
     }
