@@ -55,4 +55,18 @@ class IntTest: XCTestCase {
         XCTAssertEqual(25, 28.roundedDown(to: 5))
         XCTAssertEqual(20, 20.roundedDown(to: 10))
     }
+    
+    func testItRoundsHalfUp() {
+        XCTAssertEqual(5, 5.rounded(to: 5))
+        XCTAssertEqual(10, 5.rounded(to: 10))
+        XCTAssertEqual(10, 6.rounded(to: 10))
+        XCTAssertEqual(10, 8.rounded(to: 5))
+        XCTAssertEqual(150, 158.rounded(to: 50))
+    }
+    
+    func testItRoundsHalfDown() {
+        XCTAssertEqual(5, 4.rounded(to: 5))
+        XCTAssertEqual(0, 4.rounded(to: 10))
+        XCTAssertEqual(20, 24.rounded(to: 10))
+    }
 }

@@ -21,6 +21,16 @@ public extension Int {
 
 // MARK: Rounding
 public extension Int {
+    func rounded(to roundTo: Int) -> Int {
+        let remainder = self % roundTo
+        let roundUpThreshold = roundTo / 2
+        if (remainder < roundUpThreshold) {
+            return roundedDown(to: roundTo)
+        } else {
+            return roundedUp(to: roundTo)
+        }
+    }
+    
     func roundedUp(to roundTo: Int) -> Int {
         guard roundTo > 0 else {
             return self
