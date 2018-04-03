@@ -22,6 +22,9 @@ public extension Int {
 // MARK: Rounding
 public extension Int {
     func rounded(to roundTo: Int) -> Int {
+        guard roundTo > 0 else {
+            return self
+        }
         let remainder = self % roundTo
         let roundUpThreshold = roundTo / 2
         if (remainder < roundUpThreshold) {
