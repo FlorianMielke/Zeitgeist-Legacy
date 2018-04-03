@@ -56,6 +56,7 @@ class IntTest: XCTestCase {
     
     func testItHalfRoundsUp() {
         XCTAssertEqual(5, 5.rounded(to: 5))
+        XCTAssertEqual(0, 4.rounded(to: 10))
         XCTAssertEqual(10, 5.rounded(to: 10))
         XCTAssertEqual(10, 6.rounded(to: 10))
         XCTAssertEqual(10, 8.rounded(to: 5))
