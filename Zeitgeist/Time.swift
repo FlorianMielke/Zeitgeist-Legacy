@@ -10,13 +10,25 @@ public enum Weekday: Int {
     case sunday
 }
 
+public final class Travel {
+    public static var now = Date()
+    
+    public static func travel(to: Date) {
+        now = to
+    }
+
+    public static func travelBack() {
+        now = Date()
+    }
+}
+
 public struct Time: Equatable, Hashable, Comparable {
     let date: Date
     let calendar: Calendar
     let timeZone: TimeZone
     public static let current = Time()
     
-    public init(date: Date = Date(), timeZone: TimeZone = TimeZone.current) {
+    public init(date: Date = Travel.now, timeZone: TimeZone = TimeZone.current) {
         self.date = date
         self.calendar = Calendar.current
         self.timeZone = timeZone
