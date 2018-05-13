@@ -34,8 +34,13 @@ public struct Time: Equatable, Hashable, Comparable {
     let calendar: Calendar
     let timeZone: TimeZone
     public let date: Date
+    
     public static var current: Time {
         return Time()
+    }
+    
+    public var timeIntervalSinceReferenceDate: TimeInterval {
+        return date.timeIntervalSinceReferenceDate
     }
     
     public init(date: Date = Travel.now, timeZone: TimeZone = TimeZone.current) {

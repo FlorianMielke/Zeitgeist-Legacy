@@ -20,8 +20,8 @@ class TravelTest: XCTestCase {
         
         Travel.travelBack()
         
-        XCTAssertNotEqual(tomorrow, Time.current.date)
-        XCTAssertNotEqual(tomorrow, Travel.now)
+        XCTAssertEqual(Date().timeIntervalSinceReferenceDate, Time.current.timeIntervalSinceReferenceDate, accuracy: 0.01)
+        XCTAssertEqual(Date().timeIntervalSinceReferenceDate, Travel.now.timeIntervalSinceReferenceDate, accuracy:0.01)
         XCTAssertFalse(Travel.isTraveled)
     }
 }
