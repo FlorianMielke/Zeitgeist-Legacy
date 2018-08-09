@@ -2,25 +2,37 @@ import XCTest
 @testable import Zeitgeist
 
 class DurationTest: XCTestCase {
+    var expected = Duration()
+    
+    override func setUp() {
+        super.setUp()
+        expected = Duration()
+    }
+    
     func testSeconds() {
-        XCTAssertEqual(0, 0.seconds)
-        XCTAssertEqual(1, 1.second)
-        XCTAssertEqual(10, 10.seconds)
-        XCTAssertEqual(930, 930.seconds)
-        XCTAssertEqual(-332, -332.seconds)
+        expected.second = 0
+        XCTAssertEqual(expected, 0.seconds)
+        expected.second = 1
+        XCTAssertEqual(expected, 1.second)
+        expected.second = -332
+        XCTAssertEqual(expected, (-332).seconds)
     }
-    
+
     func testMinutes() {
-        XCTAssertEqual(0, 0.minutes)
-        XCTAssertEqual(60, 1.minute)
-        XCTAssertEqual(480, 8.minutes)
-        XCTAssertEqual(-480, -8.minutes)
+        expected.minute = 0
+        XCTAssertEqual(expected, 0.minutes)
+        expected.minute = 1
+        XCTAssertEqual(expected, 1.minute)
+        expected.minute = -8
+        XCTAssertEqual(expected, (-8).minutes)
     }
-    
+
     func testHours() {
-        XCTAssertEqual(0, 0.hours)
-        XCTAssertEqual(3600, 1.hour)
-        XCTAssertEqual(28800, 8.hours)
-        XCTAssertEqual(-28800, -8.hours)
+        expected.hour = 0
+        XCTAssertEqual(expected, 0.hours)
+        expected.hour = 1
+        XCTAssertEqual(expected, 1.hour)
+        expected.hour = -233
+        XCTAssertEqual(expected, (-233).hours)
     }
 }

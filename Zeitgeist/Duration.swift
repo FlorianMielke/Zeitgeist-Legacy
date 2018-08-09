@@ -1,14 +1,16 @@
 import Foundation
 
-public typealias Duration = TimeInterval
+public typealias Duration = DateComponents
 
-public extension Duration {
+public extension Int {
     public var second: Duration {
         return self.seconds
     }
     
     public var seconds: Duration {
-        return self
+        var duration = Duration()
+        duration.second = self
+        return duration
     }
     
     public var minute: Duration {
@@ -16,7 +18,9 @@ public extension Duration {
     }
     
     public var minutes: Duration {
-        return self * 60
+        var duration = Duration()
+        duration.minute = self
+        return duration
     }
 
     public var hour: Duration {
@@ -24,6 +28,8 @@ public extension Duration {
     }
     
     public var hours: Duration {
-        return self.minutes * 60
+        var duration = Duration()
+        duration.hour = self
+        return duration
     }
 }
