@@ -1,36 +1,37 @@
 import Foundation
 
-public typealias Duration = DateComponents
-
-public extension Duration {
+public struct Duration: Equatable, Hashable {
+    public var second: Int = 0
+    public var minute: Int = 0
+    public var hour: Int = 0
+    public var day: Int = 0
+    public var month: Int = 0
+    public var year: Int = 0
+    
+    public var components: DateComponents {
+        var components = DateComponents()
+        components.second = second
+        components.minute = minute
+        components.hour = hour
+        components.day = day
+        components.month = month
+        components.year = year
+        return components
+    }
+    
     public func ago(time: Time = Time.current) -> Time {
-        let date = Calendar.current.date(byAdding: self.inverted(), to: time.date)!
+        let date = Calendar.current.date(byAdding: self.inverted().components, to: time.date)!
         return Time(at: date)
     }
     
     func inverted() -> Duration {
         var inverted = Duration()
-        if let nanosecond = nanosecond {
-            inverted.nanosecond = nanosecond * (-1)
-        }
-        if let second = second {
-            inverted.second = second * (-1)
-        }
-        if let minute = minute {
-            inverted.minute = minute * (-1)
-        }
-        if let hour = hour {
-            inverted.hour = hour * (-1)
-        }
-        if let day = day {
-            inverted.day = day * (-1)
-        }
-        if let month = month {
-            inverted.month = month * (-1)
-        }
-        if let year = year {
-            inverted.year = year * (-1)
-        }
+        inverted.second = second * (-1)
+        inverted.minute = minute * (-1)
+        inverted.hour = hour * (-1)
+        inverted.day = day * (-1)
+        inverted.month = month * (-1)
+        inverted.year = year * (-1)
         return inverted
     }
 }
