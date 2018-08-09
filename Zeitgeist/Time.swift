@@ -54,15 +54,23 @@ public struct Time: Equatable, Hashable, Comparable {
         let date = Calendar.current.date(from: component)!
         self.init(date: date)
     }
+}
+
+// MARK: Comparison
+
+public extension Time {
+    public func isOnSameDay(_ other: Time) -> Bool {
+        return calendar.isDate(self.date, inSameDayAs: other.date)
+    }
     
     public func isBefore(_ other: Time) -> Bool {
         return self < other
     }
-
+    
     public func isAfter(_ other: Time) -> Bool {
         return self > other
     }
-
+    
     public static func <(lhs: Time, rhs: Time) -> Bool {
         return lhs.date < rhs.date
     }
