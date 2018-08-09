@@ -5,7 +5,7 @@ public typealias Duration = DateComponents
 public extension Duration {
     public func ago(time: Time = Time.current) -> Time {
         let date = Calendar.current.date(byAdding: self.inverted(), to: time.date)!
-        return Time(date: date)
+        return Time(at: date)
     }
     
     func inverted() -> Duration {

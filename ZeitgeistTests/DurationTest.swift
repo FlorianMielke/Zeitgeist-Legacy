@@ -20,7 +20,7 @@ class DurationTest: XCTestCase {
         
         let time = subject.ago()
         
-        XCTAssertEqual(Time(date: referenceDate), time)
+        XCTAssertEqual(Time(at: referenceDate), time)
     }
 
     func test1DayAgo() {
@@ -30,7 +30,7 @@ class DurationTest: XCTestCase {
         let time = 1.day.ago()
 
         let expected = Calendar.current.date(byAdding: .day, value: -1, to: referenceDate)!
-        XCTAssertEqual(Time(date: expected), time)
+        XCTAssertEqual(Time(at: expected), time)
     }
 
     func test2HoursAgo() {
@@ -40,6 +40,6 @@ class DurationTest: XCTestCase {
         let time = 2.hours.ago()
         
         let expected = Calendar.current.date(byAdding: .hour, value: -2, to: referenceDate)!
-        XCTAssertEqual(Time(date: expected), time)
+        XCTAssertEqual(Time(at: expected), time)
     }
 }
