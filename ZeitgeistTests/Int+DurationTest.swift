@@ -1,7 +1,7 @@
 import XCTest
 @testable import Zeitgeist
 
-class DurationTest: XCTestCase {
+class Int_Duration: XCTestCase {
     var expected = Duration()
     
     override func setUp() {
