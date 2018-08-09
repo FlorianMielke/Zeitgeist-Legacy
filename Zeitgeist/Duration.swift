@@ -2,6 +2,10 @@ import Foundation
 
 public typealias Duration = DateComponents
 
+public extension Duration {
+    
+}
+
 public extension Int {
     public var second: Duration {
         return self.seconds
@@ -30,6 +34,16 @@ public extension Int {
     public var hours: Duration {
         var duration = Duration()
         duration.hour = self
+        return duration
+    }
+
+    public var day: Duration {
+        return self.days
+    }
+    
+    public var days: Duration {
+        var duration = Duration()
+        duration.day = self
         return duration
     }
 }
