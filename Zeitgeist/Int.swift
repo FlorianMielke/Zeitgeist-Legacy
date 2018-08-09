@@ -1,6 +1,7 @@
 import Foundation
 
 // MARK: Enumerating
+
 public extension Int {
     func times(_ f: () -> ()) {
         if self > 0 {
@@ -20,6 +21,7 @@ public extension Int {
 }
 
 // MARK: Rounding
+
 public extension Int {
     func rounded(to roundTo: Int) -> Int {
         guard roundTo > 0 else {
