@@ -11,6 +11,7 @@
 		1729A65520641C63003EDAB5 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729A65420641C63003EDAB5 /* Period.swift */; };
 		1729A65720641D38003EDAB5 /* Int+DurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729A65620641D38003EDAB5 /* Int+DurationTest.swift */; };
 		1745A5A0211C3E7D00B5D51C /* Int+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1745A59F211C3E7D00B5D51C /* Int+Duration.swift */; };
+		1745A5A2211C3EE900B5D51C /* DurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1745A5A1211C3EE900B5D51C /* DurationTest.swift */; };
 		17515A7020640392003CB03B /* Zeitgeist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17515A6620640392003CB03B /* Zeitgeist.framework */; };
 		17515A81206403A5003CB03B /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17515A80206403A5003CB03B /* Time.swift */; };
 		1758340E207D04C5002E2053 /* TravelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758340D207D04C5002E2053 /* TravelTest.swift */; };
@@ -35,6 +36,7 @@
 		1729A65420641C63003EDAB5 /* Period.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 		1729A65620641D38003EDAB5 /* Int+DurationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+DurationTest.swift"; sourceTree = "<group>"; };
 		1745A59F211C3E7D00B5D51C /* Int+Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Duration.swift"; sourceTree = "<group>"; };
+		1745A5A1211C3EE900B5D51C /* DurationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationTest.swift; sourceTree = "<group>"; };
 		17515A6620640392003CB03B /* Zeitgeist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zeitgeist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17515A6A20640392003CB03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17515A6F20640392003CB03B /* ZeitgeistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeitgeistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 		1765D6CA206EBF4400DBC69B /* Time */ = {
 			isa = PBXGroup;
 			children = (
+				1745A5A1211C3EE900B5D51C /* DurationTest.swift */,
 				1729A65620641D38003EDAB5 /* Int+DurationTest.swift */,
 				1729A65220641C40003EDAB5 /* PeriodTest.swift */,
 				178389072065AAA300FA4EB6 /* TimeTest.swift */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1729A65320641C40003EDAB5 /* PeriodTest.swift in Sources */,
+				1745A5A2211C3EE900B5D51C /* DurationTest.swift in Sources */,
 				17B1D7F3206EB4790083E534 /* IntTest.swift in Sources */,
 				1758340E207D04C5002E2053 /* TravelTest.swift in Sources */,
 				1729A65720641D38003EDAB5 /* Int+DurationTest.swift in Sources */,
