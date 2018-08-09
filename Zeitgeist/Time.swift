@@ -32,7 +32,6 @@ public final class Travel {
 
 public struct Time: Equatable, Hashable, Comparable {
     let calendar: Calendar
-    let zone: TimeZone
     public let date: Date
     
     public static var current: Time {
@@ -43,10 +42,9 @@ public struct Time: Equatable, Hashable, Comparable {
         return date.timeIntervalSinceReferenceDate
     }
     
-    public init(at date: Date = Travel.now, zone: TimeZone = TimeZone.current) {
+    public init(at date: Date = Travel.now, calendar: Calendar = Calendar.current) {
         self.date = date
-        self.calendar = Calendar.current
-        self.zone = zone
+        self.calendar = calendar
     }
     
     public init(_ year: Int, _ month: Int, _ day: Int, _ hour: Int = 0, _ minute: Int = 0, _ second: Int = 0) {
