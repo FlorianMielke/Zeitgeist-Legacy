@@ -35,3 +35,22 @@ public struct Duration: Equatable, Hashable {
         return Time(at: date)
     }
 }
+
+extension Duration: Comparable {
+    public static func <(lhs: Duration, rhs: Duration) -> Bool {
+        if lhs.year < rhs.year {
+            return true
+        } else if (lhs.year == rhs.year && lhs.month < rhs.month) {
+             return true
+        } else if (lhs.month == rhs.month && lhs.day < rhs.day) {
+            return true
+        } else if (lhs.day == rhs.day && lhs.hour < rhs.hour) {
+            return true
+        } else if (lhs.hour == rhs.hour && lhs.minute < rhs.minute) {
+            return true
+        } else if (lhs.minute == rhs.minute && lhs.second < rhs.second) {
+            return true
+        }
+        return false
+    }
+}

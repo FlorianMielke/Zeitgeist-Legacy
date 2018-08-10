@@ -42,4 +42,14 @@ class DurationTest: XCTestCase {
         let expected = Calendar.current.date(byAdding: .hour, value: -2, to: referenceDate)!
         XCTAssertEqual(Time(at: expected), time)
     }
+    
+    func testComparabale() {
+        XCTAssertTrue(Duration(second: 0, minute: 0, hour: 0, day: 0, month: 0, year: 2017) < Duration(second: 0, minute: 0, hour: 0, day: 0, month: 0, year: 2018))
+        XCTAssertTrue(Duration(second: 0, minute: 0, hour: 0, day: 0, month: 0, year: 2017) < Duration(second: 0, minute: 0, hour: 0, day: 0, month: 1, year: 2017))
+        XCTAssertTrue(Duration(second: 0, minute: 0, hour: 0, day: 0, month: 0, year: 2017) < Duration(second: 0, minute: 0, hour: 0, day: 1, month: 0, year: 2017))
+        XCTAssertTrue(Duration(second: 0, minute: 0, hour: 0, day: 0, month: 0, year: 2017) < Duration(second: 0, minute: 0, hour: 1, day: 0, month: 0, year: 2017))
+        XCTAssertTrue(Duration(second: 0, minute: 0, hour: 0, day: 0, month: 0, year: 2017) < Duration(second: 0, minute: 1, hour: 0, day: 0, month: 0, year: 2017))
+        XCTAssertTrue(Duration(second: 0, minute: 0, hour: 0, day: 0, month: 0, year: 2017) < Duration(second: 1, minute: 0, hour: 0, day: 0, month: 0, year: 2017))
+        XCTAssertFalse(Duration(second: 0, minute: 0, hour: 0, day: 0, month: 0, year: 2017) > Duration(second: 0, minute: 0, hour: 0, day: 0, month: 0, year: 2018))
+    }
 }
