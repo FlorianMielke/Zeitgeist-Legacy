@@ -33,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171BD2B7211DBAE900A116F7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		171BD2B8211DBAEE00A116F7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1729A65220641C40003EDAB5 /* PeriodTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodTest.swift; sourceTree = "<group>"; };
 		1729A65420641C63003EDAB5 /* Period.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 		1729A65620641D38003EDAB5 /* Int+DurationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+DurationTest.swift"; sourceTree = "<group>"; };
@@ -73,7 +75,9 @@
 		17515A5C20640392003CB03B = {
 			isa = PBXGroup;
 			children = (
+				171BD2B8211DBAEE00A116F7 /* LICENSE */,
 				17515A6720640392003CB03B /* Products */,
+				171BD2B7211DBAE900A116F7 /* README.md */,
 				17515A6820640392003CB03B /* Zeitgeist */,
 				17515A7320640392003CB03B /* ZeitgeistTests */,
 			);
