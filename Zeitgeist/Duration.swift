@@ -19,12 +19,7 @@ public struct Duration: Equatable, Hashable {
         return components
     }
     
-    public func ago(time: Time = Time.current) -> Time {
-        let date = Calendar.current.date(byAdding: self.inverted().components, to: time.date)!
-        return Time(at: date)
-    }
-    
-    func inverted() -> Duration {
+    public var inverted: Duration {
         var inverted = Duration()
         inverted.second = second * (-1)
         inverted.minute = minute * (-1)
@@ -33,5 +28,10 @@ public struct Duration: Equatable, Hashable {
         inverted.month = month * (-1)
         inverted.year = year * (-1)
         return inverted
+    }
+
+    public func ago(time: Time = Time.current, calendar: Calendar = Calendar.current) -> Time {
+        let date = calendar.date(byAdding: self.inverted.components, to: time.date)!
+        return Time(at: date)
     }
 }
