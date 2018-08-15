@@ -68,4 +68,11 @@ class IntTest: XCTestCase {
         XCTAssertEqual(0, 4.rounded(to: 10))
         XCTAssertEqual(20, 24.rounded(to: 10))
     }
+    
+    // MARK: Calculation
+    func testItInverts() {
+        XCTAssertEqual(0, 0.inverted())
+        XCTAssertEqual(-1, 1.inverted())
+        XCTAssertEqual(1, -1.inverted())
+    }
 }

@@ -55,3 +55,9 @@ public extension Int {
         return self - remainder
     }
 }
+
+public extension Int {
+    func inverted() -> Int {
+        return self * (-1)
+    }
+}
