@@ -56,6 +56,8 @@ public extension Int {
     }
 }
 
+// MARK: Calculating
+
 public extension Int {
     func inverted() -> Int {
         return self * (-1)

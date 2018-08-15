@@ -3,6 +3,7 @@ import XCTest
 
 class IntTest: XCTestCase {
     // MARK: Enumerating
+
     func testItCallsAClosure0Times() {
         var result = "a"
         
@@ -34,6 +35,7 @@ class IntTest: XCTestCase {
     }
     
     // MARK: Rounding
+    
     func testItRoundsUp() {
         XCTAssertEqual(5, 5.roundedUp(to: 0))
         XCTAssertEqual(0, 0.roundedUp(to: 5))
@@ -69,7 +71,8 @@ class IntTest: XCTestCase {
         XCTAssertEqual(20, 24.rounded(to: 10))
     }
     
-    // MARK: Calculation
+    // MARK: Calculating
+    
     func testItInverts() {
         XCTAssertEqual(0, 0.inverted())
         XCTAssertEqual(-1, 1.inverted())
