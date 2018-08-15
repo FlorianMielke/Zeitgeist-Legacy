@@ -21,12 +21,12 @@ public struct Duration: Equatable, Hashable {
     
     public var inverted: Duration {
         var inverted = Duration()
-        inverted.second = second * (-1)
-        inverted.minute = minute * (-1)
-        inverted.hour = hour * (-1)
-        inverted.day = day * (-1)
-        inverted.month = month * (-1)
-        inverted.year = year * (-1)
+        inverted.second = second.inverted()
+        inverted.minute = minute.inverted()
+        inverted.hour = hour.inverted()
+        inverted.day = day.inverted()
+        inverted.month = month.inverted()
+        inverted.year = year.inverted()
         return inverted
     }
 
