@@ -13,6 +13,12 @@
 		1745A5A0211C3E7D00B5D51C /* Int+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1745A59F211C3E7D00B5D51C /* Int+Duration.swift */; };
 		1745A5A2211C3EE900B5D51C /* DurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1745A5A1211C3EE900B5D51C /* DurationTest.swift */; };
 		1745A5A7211C54BF00B5D51C /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1745A5A6211C54BF00B5D51C /* Travel.swift */; };
+		174E68352163AFAF005682EF /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F0206E94EB0083E534 /* Int.swift */; };
+		174E68362163AFAF005682EF /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8EEB9206407B300D2724E /* Duration.swift */; };
+		174E68372163AFAF005682EF /* Int+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1745A59F211C3E7D00B5D51C /* Int+Duration.swift */; };
+		174E68382163AFAF005682EF /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729A65420641C63003EDAB5 /* Period.swift */; };
+		174E68392163AFAF005682EF /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17515A80206403A5003CB03B /* Time.swift */; };
+		174E683A2163AFAF005682EF /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1745A5A6211C54BF00B5D51C /* Travel.swift */; };
 		17515A7020640392003CB03B /* Zeitgeist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17515A6620640392003CB03B /* Zeitgeist.framework */; };
 		17515A81206403A5003CB03B /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17515A80206403A5003CB03B /* Time.swift */; };
 		1758340E207D04C5002E2053 /* TravelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758340D207D04C5002E2053 /* TravelTest.swift */; };
@@ -41,6 +47,8 @@
 		1745A59F211C3E7D00B5D51C /* Int+Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Duration.swift"; sourceTree = "<group>"; };
 		1745A5A1211C3EE900B5D51C /* DurationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationTest.swift; sourceTree = "<group>"; };
 		1745A5A6211C54BF00B5D51C /* Travel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
+		174E682C2163AF34005682EF /* Zeitgeist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zeitgeist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		174E682F2163AF34005682EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17515A6620640392003CB03B /* Zeitgeist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zeitgeist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17515A6A20640392003CB03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17515A6F20640392003CB03B /* ZeitgeistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeitgeistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +62,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		174E68292163AF34005682EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17515A6220640392003CB03B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		174E682D2163AF34005682EF /* ZeitgeistWatch */ = {
+			isa = PBXGroup;
+			children = (
+				174E682F2163AF34005682EF /* Info.plist */,
+			);
+			path = ZeitgeistWatch;
+			sourceTree = "<group>";
+		};
 		17515A5C20640392003CB03B = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +103,7 @@
 				171BD2B7211DBAE900A116F7 /* README.md */,
 				17515A6820640392003CB03B /* Zeitgeist */,
 				17515A7320640392003CB03B /* ZeitgeistTests */,
+				174E682D2163AF34005682EF /* ZeitgeistWatch */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +112,7 @@
 			children = (
 				17515A6620640392003CB03B /* Zeitgeist.framework */,
 				17515A6F20640392003CB03B /* ZeitgeistTests.xctest */,
+				174E682C2163AF34005682EF /* Zeitgeist.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +196,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		174E68272163AF34005682EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17515A6320640392003CB03B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +213,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		174E682B2163AF34005682EF /* ZeitgeistWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 174E68312163AF34005682EF /* Build configuration list for PBXNativeTarget "ZeitgeistWatch" */;
+			buildPhases = (
+				174E68272163AF34005682EF /* Headers */,
+				174E68282163AF34005682EF /* Sources */,
+				174E68292163AF34005682EF /* Frameworks */,
+				174E682A2163AF34005682EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeitgeistWatch;
+			productName = ZeitgeistWatch;
+			productReference = 174E682C2163AF34005682EF /* Zeitgeist.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		17515A6520640392003CB03B /* Zeitgeist */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17515A7A20640392003CB03B /* Build configuration list for PBXNativeTarget "Zeitgeist" */;
@@ -227,6 +277,9 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Florian Mielke";
 				TargetAttributes = {
+					174E682B2163AF34005682EF = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					17515A6520640392003CB03B = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 1000;
@@ -251,11 +304,19 @@
 			targets = (
 				17515A6520640392003CB03B /* Zeitgeist */,
 				17515A6E20640392003CB03B /* ZeitgeistTests */,
+				174E682B2163AF34005682EF /* ZeitgeistWatch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		174E682A2163AF34005682EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17515A6420640392003CB03B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,6 +334,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		174E68282163AF34005682EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174E68372163AFAF005682EF /* Int+Duration.swift in Sources */,
+				174E68352163AFAF005682EF /* Int.swift in Sources */,
+				174E68392163AFAF005682EF /* Time.swift in Sources */,
+				174E683A2163AFAF005682EF /* Travel.swift in Sources */,
+				174E68382163AFAF005682EF /* Period.swift in Sources */,
+				174E68362163AFAF005682EF /* Duration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		17515A6120640392003CB03B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +384,100 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		174E68322163AF34005682EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZeitgeistWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.systemweit.ZeitgeistWatch;
+				PRODUCT_NAME = Zeitgeist;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		174E68332163AF34005682EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZeitgeistWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.systemweit.ZeitgeistWatch;
+				PRODUCT_NAME = Zeitgeist;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		174E68342163AF34005682EF /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ZeitgeistWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.systemweit.ZeitgeistWatch;
+				PRODUCT_NAME = Zeitgeist;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Beta;
+		};
 		17515A7820640392003CB03B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -455,6 +623,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.systemweit.Zeitgeist;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,6 +652,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.systemweit.Zeitgeist;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -607,6 +777,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.systemweit.Zeitgeist;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -634,6 +805,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		174E68312163AF34005682EF /* Build configuration list for PBXNativeTarget "ZeitgeistWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174E68322163AF34005682EF /* Debug */,
+				174E68332163AF34005682EF /* Release */,
+				174E68342163AF34005682EF /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		17515A6020640392003CB03B /* Build configuration list for PBXProject "Zeitgeist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
