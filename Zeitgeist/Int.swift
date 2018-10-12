@@ -22,7 +22,24 @@ public extension Int {
 
 // MARK: Rounding
 
+public enum RoundingMethod {
+    case none
+    case up
+    case down
+}
+
 public extension Int {
+    func rounded(to roundTo: Int, rounding: RoundingMethod) -> Int {
+        switch rounding {
+        case .none:
+            return rounded(to: roundTo)
+        case .up:
+            return roundedUp(to: roundTo)
+        case .down:
+            return roundedDown(to: roundTo)
+        }
+    }
+    
     func rounded(to roundTo: Int) -> Int {
         guard roundTo > 0 else {
             return self
