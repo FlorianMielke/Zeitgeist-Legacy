@@ -24,4 +24,9 @@ class TimeTest: XCTestCase {
         XCTAssertFalse(Time(2018, 3, 10).isAfter(Time(2018, 3, 11)))
         XCTAssertFalse(Time(2018, 3, 10).isAfter(Time(2018, 3, 10)))
     }
+    
+    func testTrimSeconds() {
+        let trimed = Time(2018, 7, 14, 15, 8, 3).trimed(to: .second)
+        XCTAssertEqual(Time(2018, 7, 14, 15, 8, 0), trimed)
+    }
 }
