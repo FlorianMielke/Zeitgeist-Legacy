@@ -12,7 +12,11 @@ public struct MinutesRounding: Equatable, Hashable {
         case twenty = 20
         case thirty = 30
     }
-    
     public var toMinutes = MinutesInterval.one
     public var method = RoundingMethod.none
+    
+    public init(toMinutes: MinutesInterval, method: RoundingMethod) {
+        self.toMinutes = toMinutes
+        self.method = method
+    }
 }
