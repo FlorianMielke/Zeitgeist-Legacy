@@ -1,5 +1,5 @@
 protocol Roundable {
-    func rounded(using rounding: Rounding) -> Self
+    func rounded(by rounding: Rounding) -> Self
 }
 
 public struct Rounding: Equatable, Hashable {

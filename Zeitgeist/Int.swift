@@ -23,7 +23,7 @@ public extension Int {
 // MARK: Rounding
 
 extension Int: Roundable {
-    func rounded(using rounding: Rounding) -> Int {
+    func rounded(by rounding: Rounding) -> Int {
         let interval = rounding.interval.rawValue
         switch rounding.method {
         case .none:

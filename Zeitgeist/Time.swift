@@ -93,7 +93,7 @@ public  extension Time {
 // MARK: Rounding
 
 extension Time: Roundable {
-    func rounded(using rounding: Rounding) -> Time {
+    public func rounded(by rounding: Rounding) -> Time {
         let interval = rounding.interval.rawValue
         switch rounding.method {
         case .none:
