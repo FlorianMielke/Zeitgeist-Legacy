@@ -22,12 +22,6 @@ public extension Int {
 
 // MARK: Rounding
 
-public enum RoundingMethod {
-    case none
-    case up
-    case down
-}
-
 public extension Int {
     func rounded(to roundTo: Int, rounding: RoundingMethod) -> Int {
         switch rounding {
