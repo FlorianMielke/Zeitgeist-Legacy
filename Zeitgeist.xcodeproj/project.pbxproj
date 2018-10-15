@@ -22,14 +22,13 @@
 		17515A7020640392003CB03B /* Zeitgeist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17515A6620640392003CB03B /* Zeitgeist.framework */; };
 		17515A81206403A5003CB03B /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17515A80206403A5003CB03B /* Time.swift */; };
 		1758340E207D04C5002E2053 /* TravelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758340D207D04C5002E2053 /* TravelTest.swift */; };
+		17682BC12174AC7300226BCA /* RoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17682BC02174AC7300226BCA /* RoundingTest.swift */; };
 		178389082065AAA300FA4EB6 /* TimeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178389072065AAA300FA4EB6 /* TimeTest.swift */; };
 		17B1D7F1206E94EB0083E534 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F0206E94EB0083E534 /* Int.swift */; };
 		17B1D7F3206EB4790083E534 /* IntTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F2206EB4790083E534 /* IntTest.swift */; };
 		17B8EEBA206407B300D2724E /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8EEB9206407B300D2724E /* Duration.swift */; };
-		17D14B192174A7ED000B8A5D /* MinutesRounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D14B182174A7ED000B8A5D /* MinutesRounding.swift */; };
-		17D14B1A2174A7ED000B8A5D /* MinutesRounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D14B182174A7ED000B8A5D /* MinutesRounding.swift */; };
-		17D14B1C2174A80B000B8A5D /* RoundingMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D14B1B2174A80B000B8A5D /* RoundingMethod.swift */; };
-		17D14B1D2174A80B000B8A5D /* RoundingMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D14B1B2174A80B000B8A5D /* RoundingMethod.swift */; };
+		17D14B1C2174A80B000B8A5D /* Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D14B1B2174A80B000B8A5D /* Rounding.swift */; };
+		17D14B1D2174A80B000B8A5D /* Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D14B1B2174A80B000B8A5D /* Rounding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +58,12 @@
 		17515A7620640392003CB03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17515A80206403A5003CB03B /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		1758340D207D04C5002E2053 /* TravelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTest.swift; sourceTree = "<group>"; };
+		17682BC02174AC7300226BCA /* RoundingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundingTest.swift; sourceTree = "<group>"; };
 		178389072065AAA300FA4EB6 /* TimeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTest.swift; sourceTree = "<group>"; };
 		17B1D7F0206E94EB0083E534 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		17B1D7F2206EB4790083E534 /* IntTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntTest.swift; sourceTree = "<group>"; };
 		17B8EEB9206407B300D2724E /* Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
-		17D14B182174A7ED000B8A5D /* MinutesRounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesRounding.swift; sourceTree = "<group>"; };
-		17D14B1B2174A80B000B8A5D /* RoundingMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundingMethod.swift; sourceTree = "<group>"; };
+		17D14B1B2174A80B000B8A5D /* Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rounding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +125,7 @@
 		17515A6820640392003CB03B /* Zeitgeist */ = {
 			isa = PBXGroup;
 			children = (
+				17682BC22174C95C00226BCA /* Common */,
 				1765D6CC206EBF9700DBC69B /* Numeric */,
 				17B8EEB72064070000D2724E /* Supporting Files */,
 				1765D6C9206EBF3D00DBC69B /* Time */,
@@ -148,7 +148,6 @@
 			children = (
 				17B8EEB9206407B300D2724E /* Duration.swift */,
 				1745A59F211C3E7D00B5D51C /* Int+Duration.swift */,
-				17D14B182174A7ED000B8A5D /* MinutesRounding.swift */,
 				1729A65420641C63003EDAB5 /* Period.swift */,
 				17515A80206403A5003CB03B /* Time.swift */,
 				1745A5A6211C54BF00B5D51C /* Travel.swift */,
@@ -162,6 +161,7 @@
 				1745A5A1211C3EE900B5D51C /* DurationTest.swift */,
 				1729A65620641D38003EDAB5 /* Int+DurationTest.swift */,
 				1729A65220641C40003EDAB5 /* PeriodTest.swift */,
+				17682BC02174AC7300226BCA /* RoundingTest.swift */,
 				178389072065AAA300FA4EB6 /* TimeTest.swift */,
 				1758340D207D04C5002E2053 /* TravelTest.swift */,
 			);
@@ -180,9 +180,16 @@
 			isa = PBXGroup;
 			children = (
 				17B1D7F0206E94EB0083E534 /* Int.swift */,
-				17D14B1B2174A80B000B8A5D /* RoundingMethod.swift */,
 			);
 			name = Numeric;
+			sourceTree = "<group>";
+		};
+		17682BC22174C95C00226BCA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				17D14B1B2174A80B000B8A5D /* Rounding.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		17B8EEB72064070000D2724E /* Supporting Files */ = {
@@ -351,8 +358,7 @@
 				174E68392163AFAF005682EF /* Time.swift in Sources */,
 				174E683A2163AFAF005682EF /* Travel.swift in Sources */,
 				174E68382163AFAF005682EF /* Period.swift in Sources */,
-				17D14B1A2174A7ED000B8A5D /* MinutesRounding.swift in Sources */,
-				17D14B1D2174A80B000B8A5D /* RoundingMethod.swift in Sources */,
+				17D14B1D2174A80B000B8A5D /* Rounding.swift in Sources */,
 				174E68362163AFAF005682EF /* Duration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,8 +372,7 @@
 				17B8EEBA206407B300D2724E /* Duration.swift in Sources */,
 				1745A5A7211C54BF00B5D51C /* Travel.swift in Sources */,
 				17B1D7F1206E94EB0083E534 /* Int.swift in Sources */,
-				17D14B192174A7ED000B8A5D /* MinutesRounding.swift in Sources */,
-				17D14B1C2174A80B000B8A5D /* RoundingMethod.swift in Sources */,
+				17D14B1C2174A80B000B8A5D /* Rounding.swift in Sources */,
 				1745A5A0211C3E7D00B5D51C /* Int+Duration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1729A65320641C40003EDAB5 /* PeriodTest.swift in Sources */,
+				17682BC12174AC7300226BCA /* RoundingTest.swift in Sources */,
 				1745A5A2211C3EE900B5D51C /* DurationTest.swift in Sources */,
 				17B1D7F3206EB4790083E534 /* IntTest.swift in Sources */,
 				1758340E207D04C5002E2053 /* TravelTest.swift in Sources */,

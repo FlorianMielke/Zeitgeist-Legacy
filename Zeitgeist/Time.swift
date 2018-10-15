@@ -89,3 +89,23 @@ public  extension Time {
         return calendar.component(component, from: date)
     }
 }
+
+// MARK: Rounding
+
+extension Time: Roundable {
+    func rounded(using rounding: Rounding) -> Time {
+        let interval = rounding.interval.rawValue
+        switch rounding.method {
+        case .none:
+            return rounded(self, to: minute.rounded(to: interval))
+        case .up:
+            return rounded(self, to: minute.roundedUp(to: interval))
+        case .down:
+            return rounded(self, to: minute.roundedDown(to: interval))
+        }
+    }
+
+    private func rounded(_: Time, to roundedMinutes: Int) -> Time {
+        return Time(year, month, day, hour, roundedMinutes, 0)
+    }
+}

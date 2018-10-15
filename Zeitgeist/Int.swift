@@ -22,15 +22,16 @@ public extension Int {
 
 // MARK: Rounding
 
-public extension Int {
-    func rounded(to roundTo: Int, rounding: RoundingMethod) -> Int {
-        switch rounding {
+extension Int: Roundable {
+    func rounded(using rounding: Rounding) -> Int {
+        let interval = rounding.interval.rawValue
+        switch rounding.method {
         case .none:
-            return rounded(to: roundTo)
+            return rounded(to: interval)
         case .up:
-            return roundedUp(to: roundTo)
+            return roundedUp(to: interval)
         case .down:
-            return roundedDown(to: roundTo)
+            return roundedDown(to: interval)
         }
     }
     
