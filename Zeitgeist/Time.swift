@@ -31,6 +31,10 @@ public struct Time: Equatable, Hashable, Comparable {
         self.calendar = calendar
     }
     
+    public init(calendar: Calendar) {
+        self.init(at: Travel.now, calendar: calendar)
+    }
+    
     public init(_ year: Int, _ month: Int, _ day: Int, _ hour: Int = 0, _ minute: Int = 0, _ second: Int = 0, calendar: Calendar = Calendar.current) {
         let component = DateComponents(year: year, month: month, day: day, hour: hour, minute: minute, second: second)
         let date = calendar.date(from: component)!
