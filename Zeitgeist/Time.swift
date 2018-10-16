@@ -113,7 +113,7 @@ extension Time: Roundable {
 // MARK: Manipulation
 
 extension Time {
-    public func trimed(to component: Calendar.Component) -> Time {
+    public func trimmed(to component: Calendar.Component) -> Time {
         switch component {
         case .second:
             return Time(year, month, day, hour, minute, 0, calendar: calendar)

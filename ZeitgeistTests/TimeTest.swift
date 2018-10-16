@@ -26,7 +26,7 @@ class TimeTest: XCTestCase {
     }
     
     func testTrimSeconds() {
-        let trimed = Time(2018, 7, 14, 15, 8, 3).trimed(to: .second)
+        let trimed = Time(2018, 7, 14, 15, 8, 3).trimmed(to: .second)
         XCTAssertEqual(Time(2018, 7, 14, 15, 8, 0), trimed)
     }
 }
