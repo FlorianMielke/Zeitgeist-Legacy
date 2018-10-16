@@ -26,6 +26,10 @@ public struct Rounding: Equatable, Hashable {
     public var interval = RoundingInterval.one
     public var method = RoundingMethod.none
     
+    public init() {
+        self.init(to: .one, method: .none)
+    }
+    
     public init(to interval: RoundingInterval, method: RoundingMethod) {
         self.interval = interval
         self.method = method
