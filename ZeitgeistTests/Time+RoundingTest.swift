@@ -1,7 +1,7 @@
 import XCTest
 @testable import Zeitgeist
 
-class RoundingTest: XCTestCase {
+class TimeRoundingTest: XCTestCase {
     func testItRoundsUpBy5Minutes() {
         let time = Time(2018, 1, 1, 8, 2, 0)
         let rounding = Rounding(to: .five, method: .up)
@@ -29,6 +29,16 @@ class RoundingTest: XCTestCase {
         let rounded = time.rounded(by: rounding)
         
         let expected = Time(2018, 1, 1, 8, 30, 0)
+        XCTAssertEqual(expected, rounded)
+    }
+
+    func testItRoundsToFullHours() {
+        let time = Time(2018, 1, 1, 8, 57, 0)
+        let rounding = Rounding(to: .five, method: .up)
+
+        let rounded = time.rounded(by: rounding)
+
+        let expected = Time(2018, 1, 1, 9, 0, 0)
         XCTAssertEqual(expected, rounded)
     }
 }
