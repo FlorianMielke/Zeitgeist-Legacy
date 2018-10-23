@@ -13,28 +13,37 @@ public enum Weekday: Int {
 public struct Time: Equatable, Hashable, Comparable {
     let calendar: Calendar
     public let date: Date
-    
+
     public var timeZone: TimeZone {
         return calendar.timeZone
+    }
+
+    public var timeIntervalSinceReferenceDate: TimeInterval {
+        return date.timeIntervalSinceReferenceDate
     }
 
     public static var current: Time {
         return Time()
     }
-    
-    public var timeIntervalSinceReferenceDate: TimeInterval {
-        return date.timeIntervalSinceReferenceDate
+
+    public static func current(calendar: Calendar) -> Time {
+        return Time(calendar: calendar)
     }
-    
+
+    public static func currentTime(at date: Time, calendar: Calendar = Calendar.current) -> Time {
+        let current = Time.current(calendar: calendar)
+        return Time(date.year, date.month, date.day, current.hour, current.minute, current.second, calendar: calendar)
+    }
+
     public init(at date: Date = Travel.now, calendar: Calendar = Calendar.current) {
         self.date = date
         self.calendar = calendar
     }
-    
+
     public init(calendar: Calendar) {
         self.init(at: Travel.now, calendar: calendar)
     }
-    
+
     public init(_ year: Int, _ month: Int, _ day: Int, _ hour: Int = 0, _ minute: Int = 0, _ second: Int = 0, calendar: Calendar = Calendar.current) {
         let component = DateComponents(year: year, month: month, day: day, hour: hour, minute: minute, second: second)
         let date = calendar.date(from: component)!
@@ -48,15 +57,15 @@ public extension Time {
     public func isOnSameDay(_ other: Time) -> Bool {
         return calendar.isDate(self.date, inSameDayAs: other.date)
     }
-    
+
     public func isBefore(_ other: Time) -> Bool {
         return self < other
     }
-    
+
     public func isAfter(_ other: Time) -> Bool {
         return self > other
     }
-    
+
     public static func <(lhs: Time, rhs: Time) -> Bool {
         return lhs.date < rhs.date
     }
@@ -64,15 +73,15 @@ public extension Time {
 
 // MARK: Components
 
-public  extension Time {
+public extension Time {
     public var year: Int {
         return component(.year)
     }
-    
+
     public var month: Int {
         return component(.month)
     }
-    
+
     public var day: Int {
         return component(.day)
     }
