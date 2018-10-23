@@ -26,6 +26,8 @@
 		178389082065AAA300FA4EB6 /* TimeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178389072065AAA300FA4EB6 /* TimeTest.swift */; };
 		17B1D7F1206E94EB0083E534 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F0206E94EB0083E534 /* Int.swift */; };
 		17B1D7F3206EB4790083E534 /* IntTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F2206EB4790083E534 /* IntTest.swift */; };
+		17B86778217FA9000015A29E /* Calendar+UTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B86777217FA9000015A29E /* Calendar+UTC.swift */; };
+		17B86779217FA9000015A29E /* Calendar+UTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B86777217FA9000015A29E /* Calendar+UTC.swift */; };
 		17B8EEBA206407B300D2724E /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8EEB9206407B300D2724E /* Duration.swift */; };
 		17D14B1C2174A80B000B8A5D /* Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D14B1B2174A80B000B8A5D /* Rounding.swift */; };
 		17D14B1D2174A80B000B8A5D /* Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D14B1B2174A80B000B8A5D /* Rounding.swift */; };
@@ -62,6 +64,7 @@
 		178389072065AAA300FA4EB6 /* TimeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTest.swift; sourceTree = "<group>"; };
 		17B1D7F0206E94EB0083E534 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		17B1D7F2206EB4790083E534 /* IntTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntTest.swift; sourceTree = "<group>"; };
+		17B86777217FA9000015A29E /* Calendar+UTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+UTC.swift"; sourceTree = "<group>"; };
 		17B8EEB9206407B300D2724E /* Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
 		17D14B1B2174A80B000B8A5D /* Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rounding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +149,7 @@
 		1765D6C9206EBF3D00DBC69B /* Time */ = {
 			isa = PBXGroup;
 			children = (
+				17B86777217FA9000015A29E /* Calendar+UTC.swift */,
 				17B8EEB9206407B300D2724E /* Duration.swift */,
 				1745A59F211C3E7D00B5D51C /* Int+Duration.swift */,
 				1729A65420641C63003EDAB5 /* Period.swift */,
@@ -355,6 +359,7 @@
 			files = (
 				174E68372163AFAF005682EF /* Int+Duration.swift in Sources */,
 				174E68352163AFAF005682EF /* Int.swift in Sources */,
+				17B86779217FA9000015A29E /* Calendar+UTC.swift in Sources */,
 				174E68392163AFAF005682EF /* Time.swift in Sources */,
 				174E683A2163AFAF005682EF /* Travel.swift in Sources */,
 				174E68382163AFAF005682EF /* Period.swift in Sources */,
@@ -369,6 +374,7 @@
 			files = (
 				17515A81206403A5003CB03B /* Time.swift in Sources */,
 				1729A65520641C63003EDAB5 /* Period.swift in Sources */,
+				17B86778217FA9000015A29E /* Calendar+UTC.swift in Sources */,
 				17B8EEBA206407B300D2724E /* Duration.swift in Sources */,
 				1745A5A7211C54BF00B5D51C /* Travel.swift in Sources */,
 				17B1D7F1206E94EB0083E534 /* Int.swift in Sources */,

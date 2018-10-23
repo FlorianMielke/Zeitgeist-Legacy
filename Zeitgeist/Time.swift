@@ -51,6 +51,14 @@ public struct Time: Equatable, Hashable, Comparable {
     }
 }
 
+// MARK: UTC
+
+public extension Time {
+    public static func utc(at date: Date) -> Time {
+        return Time(at: date, calendar: Calendar.utc)
+    }
+}
+
 // MARK: Comparison
 
 public extension Time {
