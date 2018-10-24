@@ -10,7 +10,7 @@ public enum Weekday: Int {
     case sunday
 }
 
-public struct Time: Equatable, Hashable, Comparable {
+public class Time: Equatable, Hashable, Comparable {
     let calendar: Calendar
     public let date: Date
 
@@ -40,22 +40,22 @@ public struct Time: Equatable, Hashable, Comparable {
         self.calendar = calendar
     }
 
-    public init(calendar: Calendar) {
+    public convenience init(calendar: Calendar) {
         self.init(at: Travel.now, calendar: calendar)
     }
 
-    public init(_ year: Int, _ month: Int, _ day: Int, _ hour: Int = 0, _ minute: Int = 0, _ second: Int = 0, calendar: Calendar = Calendar.current) {
+    public convenience init(_ year: Int, _ month: Int, _ day: Int, _ hour: Int = 0, _ minute: Int = 0, _ second: Int = 0, calendar: Calendar = Calendar.current) {
         let component = DateComponents(year: year, month: month, day: day, hour: hour, minute: minute, second: second)
         let date = calendar.date(from: component)!
         self.init(at: date, calendar: calendar)
     }
-}
-
-// MARK: UTC
-
-public extension Time {
-    public static func utc(at date: Date) -> Time {
-        return Time(at: date, calendar: Calendar.utc)
+    
+    public static func == (lhs: Time, rhs: Time) -> Bool {
+        return lhs.date == rhs.date && lhs.calendar == rhs.calendar
+    }
+    
+    public var hashValue: Int {
+        return date.hashValue + calendar.hashValue
     }
 }
 
@@ -113,7 +113,7 @@ public extension Time {
 
 // MARK: Rounding
 
-extension Time: Roundable {
+extension Time {
     public func rounded(by rounding: Rounding) -> Time {
         let interval = rounding.interval.rawValue
         switch rounding.method {
