@@ -26,7 +26,7 @@ extension Int: Roundable {
     func rounded(by rounding: Rounding) -> Int {
         let interval = rounding.interval.rawValue
         switch rounding.method {
-        case .none:
+        case .nearest:
             return rounded(to: interval)
         case .up:
             return roundedUp(to: interval)

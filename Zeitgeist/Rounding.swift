@@ -4,7 +4,7 @@ protocol Roundable {
 
 public struct Rounding: Equatable, Hashable {
     public enum RoundingMethod: Equatable, Hashable {
-        case none
+        case nearest
         case up
         case down
     }
@@ -24,10 +24,10 @@ public struct Rounding: Equatable, Hashable {
     }
     
     public var interval = RoundingInterval.one
-    public var method = RoundingMethod.none
+    public var method = RoundingMethod.nearest
     
     public init() {
-        self.init(to: .one, method: .none)
+        self.init(to: .one, method: .nearest)
     }
     
     public init(to interval: RoundingInterval, method: RoundingMethod) {

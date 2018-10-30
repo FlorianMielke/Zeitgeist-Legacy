@@ -24,7 +24,7 @@ class TimeRoundingTest: XCTestCase {
 
     func testItRoundsNoneBy15Minutes() {
         let time = Time(2018, 1, 1, 8, 22, 0)
-        let rounding = Rounding(to: .fifteen, method: .none)
+        let rounding = Rounding(to: .fifteen, method: .nearest)
         
         let rounded = time.rounded(by: rounding)
         

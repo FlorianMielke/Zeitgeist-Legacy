@@ -117,7 +117,7 @@ extension Time {
     public func rounded(by rounding: Rounding) -> Time {
         let interval = rounding.interval.rawValue
         switch rounding.method {
-        case .none:
+        case .nearest:
             return rounded(self, to: minute.rounded(to: interval))
         case .up:
             return rounded(self, to: minute.roundedUp(to: interval))
