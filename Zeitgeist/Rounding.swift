@@ -1,28 +1,30 @@
+import Foundation
+
 protocol Roundable {
     func rounded(by rounding: Rounding) -> Self
 }
 
-public struct Rounding: Equatable, Hashable {
-    public enum RoundingMethod: Equatable, Hashable {
-        case nearest
-        case up
-        case down
-    }
+@objc public enum RoundingMethod: Int, Equatable, Hashable, CaseIterable {
+    case nearest
+    case up
+    case down
+}
 
-    public enum RoundingInterval: Int, Equatable, Hashable {
-        case one = 1
-        case two = 2
-        case three = 3
-        case four = 4
-        case five = 5
-        case six = 6
-        case ten = 10
-        case twelve = 12
-        case fifteen = 15
-        case twenty = 20
-        case thirty = 30
-    }
-    
+@objc public enum RoundingInterval: Int, Equatable, Hashable, CaseIterable {
+    case one = 1
+    case two = 2
+    case three = 3
+    case four = 4
+    case five = 5
+    case six = 6
+    case ten = 10
+    case twelve = 12
+    case fifteen = 15
+    case twenty = 20
+    case thirty = 30
+}
+
+public struct Rounding: Equatable, Hashable {
     public var interval = RoundingInterval.one
     public var method = RoundingMethod.nearest
     
