@@ -30,6 +30,15 @@ public struct Duration: Equatable, Hashable {
         return inverted
     }
 
+    public init(second: Int = 0, minute: Int = 0, hour: Int = 0, day: Int = 0, month: Int = 0, year: Int = 0) {
+        self.second = second
+        self.minute = minute
+        self.hour = hour
+        self.day = day
+        self.month = month
+        self.year = year
+    }
+
     public func ago(time: Time = Time.current, calendar: Calendar = Calendar.current) -> Time {
         let date = calendar.date(byAdding: self.inverted.components, to: time.date)!
         return Time(at: date)
