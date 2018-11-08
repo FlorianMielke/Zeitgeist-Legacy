@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170731252194747000483297 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172614E3219471E100A06556 /* Localizable.swift */; };
+		172614DF21946E5700A06556 /* Zeitgeist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172614DE21946E5700A06556 /* Zeitgeist.swift */; };
+		172614E021946E6500A06556 /* Zeitgeist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172614DE21946E5700A06556 /* Zeitgeist.swift */; };
+		172614E4219471E100A06556 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172614E3219471E100A06556 /* Localizable.swift */; };
 		1729A65320641C40003EDAB5 /* PeriodTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729A65220641C40003EDAB5 /* PeriodTest.swift */; };
 		1729A65520641C63003EDAB5 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729A65420641C63003EDAB5 /* Period.swift */; };
 		1729A65720641D38003EDAB5 /* Int+DurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1729A65620641D38003EDAB5 /* Int+DurationTest.swift */; };
@@ -22,6 +26,10 @@
 		17515A7020640392003CB03B /* Zeitgeist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17515A6620640392003CB03B /* Zeitgeist.framework */; };
 		17515A81206403A5003CB03B /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17515A80206403A5003CB03B /* Time.swift */; };
 		1758340E207D04C5002E2053 /* TravelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758340D207D04C5002E2053 /* TravelTest.swift */; };
+		1758D9B0219360E300E2E83D /* ZeitgeistLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1758D9AF219360E300E2E83D /* ZeitgeistLocalizable.strings */; };
+		1758D9B1219360E300E2E83D /* ZeitgeistLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1758D9AF219360E300E2E83D /* ZeitgeistLocalizable.strings */; };
+		1758D9B5219363F200E2E83D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758D9B4219363F200E2E83D /* String+Localized.swift */; };
+		1758D9B6219363F200E2E83D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758D9B4219363F200E2E83D /* String+Localized.swift */; };
 		17682BC12174AC7300226BCA /* Time+RoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17682BC02174AC7300226BCA /* Time+RoundingTest.swift */; };
 		178389082065AAA300FA4EB6 /* TimeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178389072065AAA300FA4EB6 /* TimeTest.swift */; };
 		17B1D7F1206E94EB0083E534 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F0206E94EB0083E534 /* Int.swift */; };
@@ -48,6 +56,8 @@
 /* Begin PBXFileReference section */
 		171BD2B7211DBAE900A116F7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		171BD2B8211DBAEE00A116F7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		172614DE21946E5700A06556 /* Zeitgeist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zeitgeist.swift; sourceTree = "<group>"; };
+		172614E3219471E100A06556 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		1729A65220641C40003EDAB5 /* PeriodTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodTest.swift; sourceTree = "<group>"; };
 		1729A65420641C63003EDAB5 /* Period.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 		1729A65620641D38003EDAB5 /* Int+DurationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+DurationTest.swift"; sourceTree = "<group>"; };
@@ -62,6 +72,8 @@
 		17515A7620640392003CB03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17515A80206403A5003CB03B /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		1758340D207D04C5002E2053 /* TravelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTest.swift; sourceTree = "<group>"; };
+		1758D9AF219360E300E2E83D /* ZeitgeistLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ZeitgeistLocalizable.strings; sourceTree = "<group>"; };
+		1758D9B4219363F200E2E83D /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		17682BC02174AC7300226BCA /* Time+RoundingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+RoundingTest.swift"; sourceTree = "<group>"; };
 		178389072065AAA300FA4EB6 /* TimeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTest.swift; sourceTree = "<group>"; };
 		17B1D7F0206E94EB0083E534 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
@@ -133,6 +145,7 @@
 			children = (
 				17682BC22174C95C00226BCA /* Common */,
 				1765D6CC206EBF9700DBC69B /* Numeric */,
+				1758D9AE219360C800E2E83D /* Resources */,
 				17B8EEB72064070000D2724E /* Supporting Files */,
 				1765D6C9206EBF3D00DBC69B /* Time */,
 			);
@@ -147,6 +160,14 @@
 				1765D6CA206EBF4400DBC69B /* Time */,
 			);
 			path = ZeitgeistTests;
+			sourceTree = "<group>";
+		};
+		1758D9AE219360C800E2E83D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1758D9AF219360E300E2E83D /* ZeitgeistLocalizable.strings */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		1765D6C9206EBF3D00DBC69B /* Time */ = {
@@ -195,7 +216,10 @@
 		17682BC22174C95C00226BCA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				172614E3219471E100A06556 /* Localizable.swift */,
 				17D14B1B2174A80B000B8A5D /* Rounding.swift */,
+				1758D9B4219363F200E2E83D /* String+Localized.swift */,
+				172614DE21946E5700A06556 /* Zeitgeist.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -337,6 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1758D9B1219360E300E2E83D /* ZeitgeistLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1758D9B0219360E300E2E83D /* ZeitgeistLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,12 +389,15 @@
 			files = (
 				174E68372163AFAF005682EF /* Int+Duration.swift in Sources */,
 				174E68352163AFAF005682EF /* Int.swift in Sources */,
+				172614E021946E6500A06556 /* Zeitgeist.swift in Sources */,
 				17B86779217FA9000015A29E /* Calendar+UTC.swift in Sources */,
 				174E68392163AFAF005682EF /* Time.swift in Sources */,
+				1758D9B6219363F200E2E83D /* String+Localized.swift in Sources */,
 				174E683A2163AFAF005682EF /* Travel.swift in Sources */,
 				174E68382163AFAF005682EF /* Period.swift in Sources */,
 				17D14B1D2174A80B000B8A5D /* Rounding.swift in Sources */,
 				174E68362163AFAF005682EF /* Duration.swift in Sources */,
+				170731252194747000483297 /* Localizable.swift in Sources */,
 				17B8677E217FAD5B0015A29E /* UTCTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,12 +408,15 @@
 			files = (
 				17515A81206403A5003CB03B /* Time.swift in Sources */,
 				1729A65520641C63003EDAB5 /* Period.swift in Sources */,
+				172614DF21946E5700A06556 /* Zeitgeist.swift in Sources */,
 				17B86778217FA9000015A29E /* Calendar+UTC.swift in Sources */,
 				17B8EEBA206407B300D2724E /* Duration.swift in Sources */,
+				1758D9B5219363F200E2E83D /* String+Localized.swift in Sources */,
 				1745A5A7211C54BF00B5D51C /* Travel.swift in Sources */,
 				17B1D7F1206E94EB0083E534 /* Int.swift in Sources */,
 				17D14B1C2174A80B000B8A5D /* Rounding.swift in Sources */,
 				1745A5A0211C3E7D00B5D51C /* Int+Duration.swift in Sources */,
+				172614E4219471E100A06556 /* Localizable.swift in Sources */,
 				17B8677D217FAD5B0015A29E /* UTCTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
