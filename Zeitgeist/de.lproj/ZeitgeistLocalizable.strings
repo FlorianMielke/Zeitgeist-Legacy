@@ -1,5 +1,5 @@
-"rounding.method.nearest" = "Nächster";
+"rounding.method.nearest" = "Am Nähesten";
 
-"rounding.method.up" = "Auf";
+"rounding.method.up" = "Aufrunden";
 
-"rounding.method.down" = "Ab";
+"rounding.method.down" = "Abrunden";
