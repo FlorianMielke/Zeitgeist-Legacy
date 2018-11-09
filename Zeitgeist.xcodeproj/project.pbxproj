@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		170731252194747000483297 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172614E3219471E100A06556 /* Localizable.swift */; };
+		17073126219486B500483297 /* ZeitgeistLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17073129219486B600483297 /* ZeitgeistLocalizable.strings */; };
+		17073127219486B600483297 /* ZeitgeistLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17073129219486B600483297 /* ZeitgeistLocalizable.strings */; };
 		172614DF21946E5700A06556 /* Zeitgeist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172614DE21946E5700A06556 /* Zeitgeist.swift */; };
 		172614E021946E6500A06556 /* Zeitgeist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172614DE21946E5700A06556 /* Zeitgeist.swift */; };
 		172614E4219471E100A06556 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172614E3219471E100A06556 /* Localizable.swift */; };
@@ -26,8 +28,6 @@
 		17515A7020640392003CB03B /* Zeitgeist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17515A6620640392003CB03B /* Zeitgeist.framework */; };
 		17515A81206403A5003CB03B /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17515A80206403A5003CB03B /* Time.swift */; };
 		1758340E207D04C5002E2053 /* TravelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758340D207D04C5002E2053 /* TravelTest.swift */; };
-		1758D9B0219360E300E2E83D /* ZeitgeistLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1758D9AF219360E300E2E83D /* ZeitgeistLocalizable.strings */; };
-		1758D9B1219360E300E2E83D /* ZeitgeistLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1758D9AF219360E300E2E83D /* ZeitgeistLocalizable.strings */; };
 		1758D9B5219363F200E2E83D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758D9B4219363F200E2E83D /* String+Localized.swift */; };
 		1758D9B6219363F200E2E83D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758D9B4219363F200E2E83D /* String+Localized.swift */; };
 		17682BC12174AC7300226BCA /* Time+RoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17682BC02174AC7300226BCA /* Time+RoundingTest.swift */; };
@@ -54,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17073128219486B600483297 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ZeitgeistLocalizable.strings; sourceTree = "<group>"; };
+		1707312A219486CE00483297 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ZeitgeistLocalizable.strings; sourceTree = "<group>"; };
 		171BD2B7211DBAE900A116F7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		171BD2B8211DBAEE00A116F7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		172614DE21946E5700A06556 /* Zeitgeist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zeitgeist.swift; sourceTree = "<group>"; };
@@ -72,7 +74,6 @@
 		17515A7620640392003CB03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17515A80206403A5003CB03B /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		1758340D207D04C5002E2053 /* TravelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTest.swift; sourceTree = "<group>"; };
-		1758D9AF219360E300E2E83D /* ZeitgeistLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ZeitgeistLocalizable.strings; sourceTree = "<group>"; };
 		1758D9B4219363F200E2E83D /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		17682BC02174AC7300226BCA /* Time+RoundingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+RoundingTest.swift"; sourceTree = "<group>"; };
 		178389072065AAA300FA4EB6 /* TimeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTest.swift; sourceTree = "<group>"; };
@@ -165,7 +166,7 @@
 		1758D9AE219360C800E2E83D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1758D9AF219360E300E2E83D /* ZeitgeistLocalizable.strings */,
+				17073129219486B600483297 /* ZeitgeistLocalizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -343,6 +344,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
 			);
 			mainGroup = 17515A5C20640392003CB03B;
 			productRefGroup = 17515A6720640392003CB03B /* Products */;
@@ -361,7 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1758D9B1219360E300E2E83D /* ZeitgeistLocalizable.strings in Resources */,
+				17073127219486B600483297 /* ZeitgeistLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1758D9B0219360E300E2E83D /* ZeitgeistLocalizable.strings in Resources */,
+				17073126219486B500483297 /* ZeitgeistLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +446,18 @@
 			targetProxy = 17515A7120640392003CB03B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17073129219486B600483297 /* ZeitgeistLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17073128219486B600483297 /* en */,
+				1707312A219486CE00483297 /* de */,
+			);
+			name = ZeitgeistLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		174E68322163AF34005682EF /* Debug */ = {
@@ -542,6 +556,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -606,6 +621,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -760,6 +776,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
