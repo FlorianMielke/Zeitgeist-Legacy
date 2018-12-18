@@ -15,4 +15,14 @@ class PeriodTest: XCTestCase {
     
     XCTAssertTrue(period2 > period1)
   }
+  
+  func testDuration() {
+    let starts = Time(2018, 12, 15, 8, 4, 2)
+    let ends = Time(2018, 12, 15, 8, 5, 2)
+    let subject = Period(starts: starts, ends: ends)
+
+    let duration = subject.duration
+    
+    XCTAssertEqual(Duration(second: 0, minute: 1), duration)
+  }
 }

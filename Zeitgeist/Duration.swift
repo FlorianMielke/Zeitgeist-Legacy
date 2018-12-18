@@ -39,9 +39,24 @@ public struct Duration: Equatable, Hashable {
     self.year = year
   }
   
+  public init?(components: DateComponents) {
+    guard let second = components.second, let minute = components.minute, let hour = components.hour, let day = components.day, let month = components.month, let year = components.year else {
+      return nil
+    }
+    self.init(second: second, minute: minute, hour: hour, day: day, month: month, year: year)
+  }
+  
   public func ago(time: Time = Time.current, calendar: Calendar = Calendar.current) -> Time {
     let date = calendar.date(byAdding: self.inverted.components, to: time.date)!
     return Time(at: date)
+  }
+  
+  public static func +(lhs: Duration, rhs: Duration) -> Duration {
+    return Duration(second: lhs.second + rhs.second, minute: lhs.minute + rhs.minute, hour: lhs.hour + rhs.hour, day: lhs.day + rhs.day, month: lhs.month + rhs.month, year: lhs.year + rhs.year)
+  }
+
+  public static func -(lhs: Duration, rhs: Duration) -> Duration {
+    return Duration(second: lhs.second - rhs.second, minute: lhs.minute - rhs.minute, hour: lhs.hour - rhs.hour, day: lhs.day - rhs.day, month: lhs.month - rhs.month, year: lhs.year - rhs.year)
   }
 }
 

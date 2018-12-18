@@ -52,4 +52,16 @@ class DurationTest: XCTestCase {
     XCTAssertTrue(Duration(second: 0, minute: 0, hour: 0, day: 0, month: 0, year: 2017) < Duration(second: 1, minute: 0, hour: 0, day: 0, month: 0, year: 2017))
     XCTAssertFalse(Duration(second: 0, minute: 0, hour: 0, day: 0, month: 0, year: 2017) > Duration(second: 0, minute: 0, hour: 0, day: 0, month: 0, year: 2018))
   }
+  
+  func testAddition() {
+    XCTAssertEqual(Duration(second: 0, minute: 4), Duration(second: 0, minute: 1) + Duration(second: 0, minute: 3))
+    XCTAssertEqual(Duration(second: 0, minute: -7), Duration(second: 0, minute: -3) + Duration(second: 0, minute: -4))
+    XCTAssertEqual(Duration(second: 0, minute: -3), Duration(second: 0, minute: 0) + Duration(second: 0, minute: -3))
+  }
+
+  func testSubstraction() {
+    XCTAssertEqual(Duration(second: 0, minute: -2), Duration(second: 0, minute: 1) - Duration(second: 0, minute: 3))
+    XCTAssertEqual(Duration(second: 1, minute: 1), Duration(second: 1, minute: -3) - Duration(second: 0, minute: -4))
+    XCTAssertEqual(Duration(second: 1, minute: 12, hour: 5), Duration(second: 3, minute: 14, hour: 6) - Duration(second: 2, minute: 2, hour: 1))
+  }
 }
