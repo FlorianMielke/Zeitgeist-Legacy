@@ -2,54 +2,31 @@ import XCTest
 @testable import Zeitgeist
 
 class Int_Duration: XCTestCase {
-  var expected = Duration()
-  
-  override func setUp() {
-    super.setUp()
-    expected = Duration()
-  }
-  
   func testSeconds() {
-    expected.second = 0
-    XCTAssertEqual(expected, 0.seconds)
-    expected.second = 1
-    XCTAssertEqual(expected, 1.second)
-    expected.second = 5232
-    XCTAssertEqual(expected, 5232.seconds)
-    expected.second = -332
-    XCTAssertEqual(expected, (-332).seconds)
+    XCTAssertEqual(Duration(0), 0.seconds)
+    XCTAssertEqual(Duration(1), 1.second)
+    XCTAssertEqual(Duration(5232), 5232.seconds)
+    XCTAssertEqual(Duration(-332), (-332).seconds)
   }
   
   func testMinutes() {
-    expected.minute = 0
-    XCTAssertEqual(expected, 0.minutes)
-    expected.minute = 1
-    XCTAssertEqual(expected, 1.minute)
-    expected.minute = 112
-    XCTAssertEqual(expected, 112.minutes)
-    expected.minute = -8
-    XCTAssertEqual(expected, (-8).minutes)
+    XCTAssertEqual(Duration(0), 0.minutes)
+    XCTAssertEqual(Duration(60), 1.minute)
+    XCTAssertEqual(Duration(6720), 112.minutes)
+    XCTAssertEqual(Duration(-480), (-8).minutes)
   }
   
   func testHours() {
-    expected.hour = 0
-    XCTAssertEqual(expected, 0.hours)
-    expected.hour = 1
-    XCTAssertEqual(expected, 1.hour)
-    expected.hour = 41
-    XCTAssertEqual(expected, 41.hours)
-    expected.hour = -233
-    XCTAssertEqual(expected, (-233).hours)
+    XCTAssertEqual(Duration(0), 0.hours)
+    XCTAssertEqual(Duration(3600), 1.hour)
+    XCTAssertEqual(Duration(147600), 41.hours)
+    XCTAssertEqual(Duration(-838800), (-233).hours)
   }
   
   func testDays() {
-    expected.day = 0
-    XCTAssertEqual(expected, 0.days)
-    expected.day = 1
-    XCTAssertEqual(expected, 1.day)
-    expected.day = 352
-    XCTAssertEqual(expected, 352.days)
-    expected.day = -233
-    XCTAssertEqual(expected, (-233).days)
+    XCTAssertEqual(Duration(0), 0.days)
+    XCTAssertEqual(Duration(86400), 1.day)
+    XCTAssertEqual(Duration(30412800), 352.days)
+    XCTAssertEqual(Duration(-20131200), (-233).days)
   }
 }

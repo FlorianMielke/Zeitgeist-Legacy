@@ -1,8 +1,6 @@
 public extension Int {
   public var seconds: Duration {
-    var duration = Duration()
-    duration.second = self
-    return duration
+    return Duration(Duration.ToSeconds.second.rawValue * self)
   }
   
   public var second: Duration {
@@ -10,9 +8,7 @@ public extension Int {
   }
   
   public var minutes: Duration {
-    var duration = Duration()
-    duration.minute = self
-    return duration
+    return Duration(Duration.ToSeconds.minute.rawValue * self)
   }
   
   public var minute: Duration {
@@ -20,9 +16,7 @@ public extension Int {
   }
   
   public var hours: Duration {
-    var duration = Duration()
-    duration.hour = self
-    return duration
+    return Duration(Duration.ToSeconds.hour.rawValue * self)
   }
   
   public var hour: Duration {
@@ -30,9 +24,7 @@ public extension Int {
   }
   
   public var days: Duration {
-    var duration = Duration()
-    duration.day = self
-    return duration
+    return Duration(Duration.ToSeconds.day.rawValue * self)
   }
   
   public var day: Duration {

@@ -23,6 +23,6 @@ class PeriodTest: XCTestCase {
 
     let duration = subject.duration
     
-    XCTAssertEqual(Duration(second: 0, minute: 1), duration)
+    XCTAssertEqual(60.seconds, duration)
   }
 }
