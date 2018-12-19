@@ -93,6 +93,14 @@ public extension Time {
   func component(_ component: Calendar.Component) -> Int {
     return calendar.component(component, from: date)
   }
+  
+  public func seconds(to: Time) -> Duration {
+    let comp: Set<Calendar.Component> = [.second]
+    guard let seconds = calendar.dateComponents(comp, from: date, to: to.date).second else {
+      return 0.seconds
+    }
+    return Duration(seconds)
+  }
 }
 
 // MARK: Rounding

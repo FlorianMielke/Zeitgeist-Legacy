@@ -7,11 +7,7 @@ public struct Period: Equatable, Hashable, Comparable {
   public let allDay: Bool
   
   public var duration: Duration {
-    let comp: Set<Calendar.Component> = [.second]
-    guard let second = Calendar.current.dateComponents(comp, from: starts.date, to: ends.date).second else {
-      return 0.seconds
-    }
-    return Duration(second)
+    return starts.seconds(to: ends)
   }
   
   public init(starts: Time, ends: Time, allDay: Bool) {

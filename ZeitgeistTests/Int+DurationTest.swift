@@ -10,23 +10,23 @@ class Int_Duration: XCTestCase {
   }
   
   func testMinutes() {
-    XCTAssertEqual(Duration(0), 0.minutes)
-    XCTAssertEqual(Duration(60), 1.minute)
-    XCTAssertEqual(Duration(6720), 112.minutes)
-    XCTAssertEqual(Duration(-480), (-8).minutes)
+    XCTAssertEqual(0.seconds, 0.minutes)
+    XCTAssertEqual(60.seconds, 1.minute)
+    XCTAssertEqual(6720.seconds, 112.minutes)
+    XCTAssertEqual((-480).seconds, (-8).minutes)
   }
   
   func testHours() {
-    XCTAssertEqual(Duration(0), 0.hours)
-    XCTAssertEqual(Duration(3600), 1.hour)
-    XCTAssertEqual(Duration(147600), 41.hours)
-    XCTAssertEqual(Duration(-838800), (-233).hours)
+    XCTAssertEqual(0.seconds, 0.hours)
+    XCTAssertEqual(3600.seconds, 1.hour)
+    XCTAssertEqual(147600.seconds, 41.hours)
+    XCTAssertEqual((-838800).seconds, (-233).hours)
   }
   
   func testDays() {
-    XCTAssertEqual(Duration(0), 0.days)
-    XCTAssertEqual(Duration(86400), 1.day)
-    XCTAssertEqual(Duration(30412800), 352.days)
-    XCTAssertEqual(Duration(-20131200), (-233).days)
+    XCTAssertEqual(0.seconds, 0.days)
+    XCTAssertEqual(86400.seconds, 1.day)
+    XCTAssertEqual(30412800.seconds, 352.days)
+    XCTAssertEqual((-20131200).seconds, (-233).days)
   }
 }

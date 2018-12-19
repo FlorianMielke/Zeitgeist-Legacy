@@ -29,4 +29,13 @@ class TimeTest: XCTestCase {
     let trimed = Time(2018, 7, 14, 15, 8, 3).trimmed(to: .second)
     XCTAssertEqual(Time(2018, 7, 14, 15, 8, 0), trimed)
   }
+  
+  func testSecondsToOtherTime() {
+    let subject = Time(2018, 1, 1, 1, 1, 0)
+    let other = Time(2018, 1, 1, 1, 5, 0)
+    
+    let seconds = subject.seconds(to: other)
+    
+    XCTAssertEqual(240.seconds, seconds)
+  }
 }
