@@ -17,8 +17,8 @@ public struct Duration: Equatable, Hashable {
     self.second = second
   }
   
-  public func ago(time: Time = Time.current, calendar: Calendar = Calendar.current) -> Time {
-    let date = calendar.date(byAdding: self.inverted.components, to: time.date)!
+  public func ago(time: Time = Time.current) -> Time {
+    let date = time.calendar.date(byAdding: self.inverted.components, to: time.date)!
     return Time(at: date)
   }
 
