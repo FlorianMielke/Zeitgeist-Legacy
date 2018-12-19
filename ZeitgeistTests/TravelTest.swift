@@ -25,3 +25,9 @@ class TravelTest: XCTestCase {
     XCTAssertFalse(Travel.isTraveled)
   }
 }
+
+extension Time {
+  public var timeIntervalSinceReferenceDate: TimeInterval {
+    return date.timeIntervalSinceReferenceDate
+  }
+}
