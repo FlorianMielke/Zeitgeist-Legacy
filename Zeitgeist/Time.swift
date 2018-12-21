@@ -63,6 +63,15 @@ public extension Time {
   }
 }
 
+public extension Time {
+  public static func +(time: Time, duration: Duration) -> Time {
+    if let date = time.calendar.date(byAdding: duration.components, to: time.date) {
+      return Time(at: date, calendar: time.calendar)
+    }
+    return time
+  }
+}
+
 // MARK: Components
 
 public extension Time {
