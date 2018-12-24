@@ -22,7 +22,7 @@ public struct Duration: Equatable, Hashable {
     return Time(at: date)
   }
 
-  public enum ToSeconds: Int {
+  public enum Defaults: Int {
     case second = 1
     case minute = 60
     case hour = 3600
