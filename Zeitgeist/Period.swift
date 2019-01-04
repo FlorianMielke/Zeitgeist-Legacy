@@ -21,6 +21,7 @@ public struct Period: Equatable, Hashable, Comparable {
   }
   
   public static func <(lhs: Period, rhs: Period) -> Bool {
-    return lhs.starts < rhs.starts
+    return  (lhs.starts < rhs.starts) ||
+            (lhs.starts == rhs.starts && lhs.duration < rhs.duration)
   }
 }

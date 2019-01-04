@@ -2,18 +2,20 @@ import XCTest
 @testable import Zeitgeist
 
 class PeriodTest: XCTestCase {
-  func testEarlier() {
-    let period1 = Period(starts: Time(), ends: Time(), allDay: true)
-    let period2 = Period(starts: Time(), ends: Time(), allDay: true)
+  func testLess() {
+    let time = Time(2019, 1, 1, 7)
+    let period1 = Period(starts: time, ends: time + 1.hour, allDay: true)
+    let period2 = Period(starts: time + 2.hours, ends: time + 3.hours, allDay: true)
     
     XCTAssertTrue(period1 < period2)
   }
   
-  func testLater() {
-    let period1 = Period(starts: Time(), ends: Time(), allDay: true)
-    let period2 = Period(starts: Time(), ends: Time(), allDay: true)
-    
-    XCTAssertTrue(period2 > period1)
+  func testLessWithEqualStarts() {
+    let time = Time(2019, 1, 1, 7)
+    let period1 = Period(starts: time, ends: time + 1.hour, allDay: true)
+    let period2 = Period(starts: time, ends: time + 3.hours, allDay: true)
+
+    XCTAssertTrue(period1 < period2)
   }
   
   func testDuration() {
