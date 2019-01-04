@@ -24,4 +24,12 @@ public struct Period: Equatable, Hashable, Comparable {
     return  (lhs.starts < rhs.starts) ||
             (lhs.starts == rhs.starts && lhs.duration < rhs.duration)
   }
+  
+  public func endsLater(then other: Period) -> Bool {
+    return ends > other.ends
+  }
+
+  public func startsEarlier(then other: Period) -> Bool {
+    return starts < other.starts
+  }
 }
