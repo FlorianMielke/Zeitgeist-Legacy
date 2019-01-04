@@ -13,6 +13,9 @@ public enum Weekday: Int {
 public struct Time: Equatable, Hashable, Comparable {
   public let calendar: Calendar
   public let date: Date
+  public var timeZone: TimeZone {
+    return calendar.timeZone
+  }
   
   public static var current: Time {
     return Time()
