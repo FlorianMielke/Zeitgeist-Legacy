@@ -30,6 +30,7 @@
 		1758340E207D04C5002E2053 /* TravelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758340D207D04C5002E2053 /* TravelTest.swift */; };
 		1758D9B5219363F200E2E83D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758D9B4219363F200E2E83D /* String+Localized.swift */; };
 		1758D9B6219363F200E2E83D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758D9B4219363F200E2E83D /* String+Localized.swift */; };
+		175F9AC021DFE3880045D785 /* Time+ComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9ABF21DFE3880045D785 /* Time+ComponentTests.swift */; };
 		17682BC12174AC7300226BCA /* Time+RoundingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17682BC02174AC7300226BCA /* Time+RoundingTests.swift */; };
 		178389082065AAA300FA4EB6 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178389072065AAA300FA4EB6 /* TimeTests.swift */; };
 		17B1D7F1206E94EB0083E534 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F0206E94EB0083E534 /* Int.swift */; };
@@ -76,6 +77,7 @@
 		17515A80206403A5003CB03B /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		1758340D207D04C5002E2053 /* TravelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTest.swift; sourceTree = "<group>"; };
 		1758D9B4219363F200E2E83D /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		175F9ABF21DFE3880045D785 /* Time+ComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+ComponentTests.swift"; sourceTree = "<group>"; };
 		17682BC02174AC7300226BCA /* Time+RoundingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+RoundingTests.swift"; sourceTree = "<group>"; };
 		178389072065AAA300FA4EB6 /* TimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTests.swift; sourceTree = "<group>"; };
 		17B1D7F0206E94EB0083E534 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				1745A5A1211C3EE900B5D51C /* DurationTest.swift */,
 				1729A65620641D38003EDAB5 /* Int+DurationTest.swift */,
 				1729A65220641C40003EDAB5 /* PeriodTest.swift */,
+				175F9ABF21DFE3880045D785 /* Time+ComponentTests.swift */,
 				17682BC02174AC7300226BCA /* Time+RoundingTests.swift */,
 				17B822DF21DF928000EBF9C9 /* Time+TrimTests.swift */,
 				178389072065AAA300FA4EB6 /* TimeTests.swift */,
@@ -436,6 +439,7 @@
 				17B1D7F3206EB4790083E534 /* IntTest.swift in Sources */,
 				1758340E207D04C5002E2053 /* TravelTest.swift in Sources */,
 				1729A65720641D38003EDAB5 /* Int+DurationTest.swift in Sources */,
+				175F9AC021DFE3880045D785 /* Time+ComponentTests.swift in Sources */,
 				17B822E021DF928000EBF9C9 /* Time+TrimTests.swift in Sources */,
 				178389082065AAA300FA4EB6 /* TimeTests.swift in Sources */,
 			);

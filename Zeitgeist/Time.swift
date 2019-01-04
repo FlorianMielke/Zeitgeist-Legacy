@@ -71,6 +71,8 @@ public extension Time {
   }
 }
 
+// MARK: Calculation
+
 public extension Time {
   public static func +(time: Time, duration: Duration) -> Time {
     if let date = time.calendar.date(byAdding: duration.components, to: time.date) {
@@ -117,6 +119,10 @@ public extension Time {
       return 0.seconds
     }
     return Duration(seconds)
+  }
+  
+  public var isUTC: Bool {
+    return timeZone == .utc
   }
 }
 
