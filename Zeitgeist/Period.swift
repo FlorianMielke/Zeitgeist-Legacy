@@ -7,7 +7,7 @@ public struct Period: Equatable, Hashable, Comparable {
   public let allDay: Bool
   
   public var duration: Duration {
-    return starts.seconds(to: ends)
+    return starts.duration(to: ends)
   }
   
   public init(starts: Time, ends: Time, allDay: Bool) {

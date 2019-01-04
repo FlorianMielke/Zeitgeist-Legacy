@@ -25,12 +25,12 @@ public struct Time: Equatable, Hashable, Comparable {
     return Time(calendar: calendar)
   }
   
-  public static func currentTime(at date: Time, calendar: Calendar = Calendar.current) -> Time {
+  public static func currentTime(at date: Time, calendar: Calendar = .current) -> Time {
     let current = Time.current(calendar: calendar)
     return Time(date.year, date.month, date.day, current.hour, current.minute, current.second, calendar: calendar)
   }
   
-  public init(at date: Date = Travel.now, calendar: Calendar = Calendar.current) {
+  public init(at date: Date = Travel.now, calendar: Calendar = .current) {
     self.date = date
     self.calendar = calendar
   }
@@ -39,9 +39,14 @@ public struct Time: Equatable, Hashable, Comparable {
     self.init(at: Travel.now, calendar: calendar)
   }
   
-  public init(_ year: Int, _ month: Int, _ day: Int, _ hour: Int = 0, _ minute: Int = 0, _ second: Int = 0, calendar: Calendar = Calendar.current) {
+  public init(_ year: Int, _ month: Int, _ day: Int, _ hour: Int = 0, _ minute: Int = 0, _ second: Int = 0, calendar: Calendar = .current) {
     let component = DateComponents(year: year, month: month, day: day, hour: hour, minute: minute, second: second)
     let date = calendar.date(from: component)!
+    self.init(at: date, calendar: calendar)
+  }
+  
+  public init(components: DateComponents, calendar: Calendar = .current) {
+    let date = calendar.date(from: components)!
     self.init(at: date, calendar: calendar)
   }
 }
@@ -106,7 +111,7 @@ public extension Time {
     return calendar.component(component, from: date)
   }
   
-  public func seconds(to: Time) -> Duration {
+  public func duration(to: Time) -> Duration {
     let comp: Set<Calendar.Component> = [.second]
     guard let seconds = calendar.dateComponents(comp, from: date, to: to.date).second else {
       return 0.seconds
@@ -140,10 +145,17 @@ extension Time {
 extension Time {
   public func trimmed(to component: Calendar.Component) -> Time {
     switch component {
-    case .second:
-      return Time(year, month, day, hour, minute, 0, calendar: calendar)
+    case .day: return Time(year, month, day, calendar: calendar)
+    case .second: return Time(year, month, day, hour, minute, 0, calendar: calendar)
     default:
       return self
     }
+  }
+  
+  public func to(_ timeZone: TimeZone) -> Time {
+    let components = calendar.dateComponents(in: timeZone, from: self.date)
+    var calendarInTimeZone = calendar
+    calendarInTimeZone.timeZone = timeZone
+    return Time(components: components, calendar: calendarInTimeZone)
   }
 }

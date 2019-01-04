@@ -1,7 +1,7 @@
 import XCTest
 @testable import Zeitgeist
 
-class TimeRoundingTest: XCTestCase {
+class TimeRoundingTests: XCTestCase {
   func testItRoundsUpBy5Minutes() {
     let time = Time(2018, 1, 1, 8, 2, 0)
     let rounding = Rounding(to: .five, method: .up)

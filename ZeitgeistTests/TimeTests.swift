@@ -1,7 +1,7 @@
 import XCTest
 @testable import Zeitgeist
 
-class TimeTest: XCTestCase {
+class TimeTests: XCTestCase {
   func testComponents() {
     let time = Time(2018, 2, 1, 12, 4, 15)
     
@@ -30,11 +30,11 @@ class TimeTest: XCTestCase {
     XCTAssertEqual(Time(2018, 7, 14, 15, 8, 0), trimed)
   }
   
-  func testSecondsToOtherTime() {
+  func testDurationToOtherTime() {
     let subject = Time(2018, 1, 1, 1, 1, 0)
     let other = Time(2018, 1, 1, 1, 5, 0)
     
-    let seconds = subject.seconds(to: other)
+    let seconds = subject.duration(to: other)
     
     XCTAssertEqual(240.seconds, seconds)
   }
