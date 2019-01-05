@@ -58,14 +58,6 @@ public extension Time {
     return calendar.isDate(self.date, inSameDayAs: other.date)
   }
   
-  public func isBefore(_ other: Time) -> Bool {
-    return self < other
-  }
-  
-  public func isAfter(_ other: Time) -> Bool {
-    return self > other
-  }
-  
   public static func <(lhs: Time, rhs: Time) -> Bool {
     return lhs.date < rhs.date
   }
@@ -142,7 +134,7 @@ extension Time {
   }
   
   private func rounded(_: Time, to roundedMinutes: Int) -> Time {
-    return Time(year, month, day, hour, roundedMinutes, 0)
+    return Time(year, month, day, hour, roundedMinutes, 0, calendar: calendar)
   }
 }
 
@@ -167,5 +159,17 @@ extension Time {
     var calendarInTimeZone = calendar
     calendarInTimeZone.timeZone = timeZone
     return Time(components: components, calendar: calendarInTimeZone)
+  }
+  
+  public var starts: Time {
+    return Time(at: calendar.startOfDay(for: date), calendar: calendar)
+  }
+  
+  public var ends: Time {
+    var comp = DateComponents()
+    comp.day = 1
+    comp.second = -1
+    let ends = calendar.date(byAdding: comp, to: starts.date)!
+    return Time(at: ends, calendar: calendar)
   }
 }
