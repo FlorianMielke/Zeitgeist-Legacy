@@ -113,9 +113,9 @@ public extension Time {
     return calendar.component(component, from: date)
   }
   
-  public func duration(to: Time) -> Duration {
+  public func duration(to other: Time) -> Duration {
     let comp: Set<Calendar.Component> = [.second]
-    guard let seconds = calendar.dateComponents(comp, from: date, to: to.date).second else {
+    guard let seconds = calendar.dateComponents(comp, from: date, to: other.date).second else {
       return 0.seconds
     }
     return Duration(seconds)
