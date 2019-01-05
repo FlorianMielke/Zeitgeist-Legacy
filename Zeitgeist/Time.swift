@@ -158,8 +158,12 @@ extension Time {
     }
   }
   
+  public func components(_ components: Set<Calendar.Component>) -> DateComponents {
+    return calendar.dateComponents(components, from: date)
+  }
+  
   public func to(_ timeZone: TimeZone) -> Time {
-    let components = calendar.dateComponents(in: timeZone, from: self.date)
+    let components = calendar.dateComponents(in: timeZone, from: date)
     var calendarInTimeZone = calendar
     calendarInTimeZone.timeZone = timeZone
     return Time(components: components, calendar: calendarInTimeZone)
