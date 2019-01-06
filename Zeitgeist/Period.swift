@@ -10,6 +10,10 @@ public struct Period: Equatable, Hashable, Comparable {
     return starts.duration(to: ends)
   }
   
+  public var maximized: Period {
+    return Period(starts: starts.starts, ends: ends.ends)
+  }
+
   public init(starts: Time, ends: Time, allDay: Bool) {
     self.starts = starts
     self.ends = ends
