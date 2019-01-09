@@ -27,4 +27,8 @@ class PeriodTest: XCTestCase {
     
     XCTAssertEqual(60.seconds, duration)
   }
+  
+  func testToTimeZone() {
+    
+  }
 }

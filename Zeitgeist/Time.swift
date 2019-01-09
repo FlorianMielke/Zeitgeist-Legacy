@@ -154,13 +154,6 @@ extension Time {
     return calendar.dateComponents(components, from: date)
   }
   
-  public func to(_ timeZone: TimeZone) -> Time {
-    let components = calendar.dateComponents(in: timeZone, from: date)
-    var calendarInTimeZone = calendar
-    calendarInTimeZone.timeZone = timeZone
-    return Time(components: components, calendar: calendarInTimeZone)
-  }
-  
   public var starts: Time {
     return Time(at: calendar.startOfDay(for: date), calendar: calendar)
   }
