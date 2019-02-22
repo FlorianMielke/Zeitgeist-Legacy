@@ -54,11 +54,11 @@ public struct Time: Equatable, Hashable, Comparable {
 // MARK: Comparison
 
 public extension Time {
-  public func isOnSameDay(_ other: Time) -> Bool {
+  func isOnSameDay(_ other: Time) -> Bool {
     return calendar.isDate(self.date, inSameDayAs: other.date)
   }
   
-  public static func <(lhs: Time, rhs: Time) -> Bool {
+  static func <(lhs: Time, rhs: Time) -> Bool {
     return lhs.date < rhs.date
   }
 }
@@ -66,7 +66,7 @@ public extension Time {
 // MARK: Calculation
 
 public extension Time {
-  public static func +(time: Time, duration: Duration) -> Time {
+  static func +(time: Time, duration: Duration) -> Time {
     if let date = time.calendar.date(byAdding: duration.components, to: time.date) {
       return Time(at: date, calendar: time.calendar)
     }
@@ -77,27 +77,27 @@ public extension Time {
 // MARK: Components
 
 public extension Time {
-  public var year: Int {
+  var year: Int {
     return component(.year)
   }
   
-  public var month: Int {
+  var month: Int {
     return component(.month)
   }
   
-  public var day: Int {
+  var day: Int {
     return component(.day)
   }
   
-  public var hour: Int {
+  var hour: Int {
     return component(.hour)
   }
   
-  public var minute: Int {
+  var minute: Int {
     return component(.minute)
   }
   
-  public var second: Int {
+  var second: Int {
     return component(.second)
   }
   
@@ -105,7 +105,7 @@ public extension Time {
     return calendar.component(component, from: date)
   }
   
-  public func duration(to other: Time) -> Duration {
+  func duration(to other: Time) -> Duration {
     let comp: Set<Calendar.Component> = [.second]
     guard let seconds = calendar.dateComponents(comp, from: date, to: other.date).second else {
       return 0.seconds
@@ -113,7 +113,7 @@ public extension Time {
     return Duration(seconds)
   }
   
-  public var isUTC: Bool {
+  var isUTC: Bool {
     return timeZone == .utc
   }
 }

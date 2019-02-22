@@ -17,7 +17,7 @@ extension Calendar {
 }
 
 public extension TimeZone {
-  public static var utc: TimeZone {
+  static var utc: TimeZone {
     return TimeZone(secondsFromGMT: 0)!
   }
 }
