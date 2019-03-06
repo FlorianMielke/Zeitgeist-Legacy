@@ -1,3 +1,3 @@
 # Zeitgeist
 
-A small swifty wrapper around `Date` and other `Foundation` stuff. Somewhat inspired by Ruby on Rails 🤷‍♂️. 
+Provides some handy helper around  `Foundation`, like `Date` and others. Somewhat inspired by Ruby on Rails 🤷‍♂️. 
