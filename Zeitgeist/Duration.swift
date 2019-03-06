@@ -30,6 +30,7 @@ public struct Duration: Equatable, Hashable {
   }
 }
 
+// MARK: -
 // MARK - Math
 
 extension Duration {

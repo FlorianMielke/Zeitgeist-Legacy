@@ -51,6 +51,7 @@ public struct Time: Equatable, Hashable, Comparable {
   }
 }
 
+// MARK: -
 // MARK: Comparison
 
 public extension Time {
@@ -63,6 +64,7 @@ public extension Time {
   }
 }
 
+// MARK: -
 // MARK: Calculation
 
 public extension Time {
@@ -74,6 +76,7 @@ public extension Time {
   }
 }
 
+// MARK: -
 // MARK: Components
 
 public extension Time {
@@ -118,6 +121,7 @@ public extension Time {
   }
 }
 
+// MARK: -
 // MARK: Rounding
 
 extension Time {
@@ -138,6 +142,7 @@ extension Time {
   }
 }
 
+// MARK: -
 // MARK: Manipulation
 
 extension Time {
