@@ -1,5 +1,6 @@
 import Foundation
 
+// MARK: -
 // MARK: Enumerating
 
 public extension Int {
@@ -20,6 +21,7 @@ public extension Int {
   }
 }
 
+// MARK: -
 // MARK: Rounding
 
 extension Int: Roundable {
@@ -68,6 +70,7 @@ extension Int: Roundable {
   }
 }
 
+// MARK: -
 // MARK: Calculating
 
 public extension Int {
