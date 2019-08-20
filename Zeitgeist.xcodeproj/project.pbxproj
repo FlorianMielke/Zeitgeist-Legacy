@@ -33,6 +33,7 @@
 		175F9AC021DFE3880045D785 /* Time+ComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9ABF21DFE3880045D785 /* Time+ComponentTests.swift */; };
 		17682BC12174AC7300226BCA /* Time+RoundingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17682BC02174AC7300226BCA /* Time+RoundingTests.swift */; };
 		178389082065AAA300FA4EB6 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178389072065AAA300FA4EB6 /* TimeTests.swift */; };
+		17B0CA42230BFF280082E6CD /* PersonNameComponents+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA41230BFEE00082E6CD /* PersonNameComponents+Defaults.swift */; };
 		17B1D7F1206E94EB0083E534 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F0206E94EB0083E534 /* Int.swift */; };
 		17B1D7F3206EB4790083E534 /* IntTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F2206EB4790083E534 /* IntTest.swift */; };
 		17B822E021DF928000EBF9C9 /* Time+ManipuliationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B822DF21DF928000EBF9C9 /* Time+ManipuliationTests.swift */; };
@@ -78,6 +79,7 @@
 		175F9ABF21DFE3880045D785 /* Time+ComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+ComponentTests.swift"; sourceTree = "<group>"; };
 		17682BC02174AC7300226BCA /* Time+RoundingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+RoundingTests.swift"; sourceTree = "<group>"; };
 		178389072065AAA300FA4EB6 /* TimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTests.swift; sourceTree = "<group>"; };
+		17B0CA41230BFEE00082E6CD /* PersonNameComponents+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonNameComponents+Defaults.swift"; sourceTree = "<group>"; };
 		17B1D7F0206E94EB0083E534 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		17B1D7F2206EB4790083E534 /* IntTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntTest.swift; sourceTree = "<group>"; };
 		17B822DF21DF928000EBF9C9 /* Time+ManipuliationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+ManipuliationTests.swift"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		17515A6820640392003CB03B /* Zeitgeist */ = {
 			isa = PBXGroup;
 			children = (
+				17B0CA3E230BFECF0082E6CD /* Foundation */,
 				17682BC22174C95C00226BCA /* Common */,
 				1765D6CC206EBF9700DBC69B /* Numeric */,
 				1758D9AE219360C800E2E83D /* Resources */,
@@ -225,6 +228,14 @@
 				172614DE21946E5700A06556 /* Zeitgeist.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		17B0CA3E230BFECF0082E6CD /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				17B0CA41230BFEE00082E6CD /* PersonNameComponents+Defaults.swift */,
+			);
+			name = Foundation;
 			sourceTree = "<group>";
 		};
 		17B8EEB72064070000D2724E /* Supporting Files */ = {
@@ -414,6 +425,7 @@
 				17515A81206403A5003CB03B /* Time.swift in Sources */,
 				1729A65520641C63003EDAB5 /* Period.swift in Sources */,
 				172614DF21946E5700A06556 /* Zeitgeist.swift in Sources */,
+				17B0CA42230BFF280082E6CD /* PersonNameComponents+Defaults.swift in Sources */,
 				17B86778217FA9000015A29E /* UTC.swift in Sources */,
 				17B8EEBA206407B300D2724E /* Duration.swift in Sources */,
 				1758D9B5219363F200E2E83D /* String+Localized.swift in Sources */,
