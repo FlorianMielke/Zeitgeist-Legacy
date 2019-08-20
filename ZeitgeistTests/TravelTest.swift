@@ -1,7 +1,7 @@
 import XCTest
 @testable import Zeitgeist
 
-class TravelTest: XCTestCase {
+class TravelTest : XCTestCase {
   let calendar = Calendar.current
   var tomorrow: Date!
   

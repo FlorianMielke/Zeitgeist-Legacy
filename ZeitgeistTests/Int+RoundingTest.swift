@@ -1,41 +1,7 @@
 import XCTest
 @testable import Zeitgeist
 
-class IntTest: XCTestCase {
-  // MARK: Enumerating
-  
-  func testItCallsAClosure0Times() {
-    var result = "a"
-    
-    0.times {
-      result.append("b")
-    }
-    
-    XCTAssertEqual("a", result)
-  }
-  
-  func testItCallsAClosure1Time() {
-    var result = "a"
-    
-    1.times {
-      result.append("b")
-    }
-    
-    XCTAssertEqual("ab", result)
-  }
-  
-  func testItCallsAClosure5Times() {
-    var result = "a"
-    
-    5.times {
-      result.append("b")
-    }
-    
-    XCTAssertEqual("abbbbb", result)
-  }
-  
-  // MARK: Rounding
-  
+class Int_RoundingTest : XCTestCase {
   func testItRoundsUp() {
     XCTAssertEqual(5, 5.roundedUp(to: 0))
     XCTAssertEqual(0, 0.roundedUp(to: 5))
@@ -69,13 +35,5 @@ class IntTest: XCTestCase {
     XCTAssertEqual(5, 4.rounded(to: 5))
     XCTAssertEqual(0, 4.rounded(to: 10))
     XCTAssertEqual(20, 24.rounded(to: 10))
-  }
-  
-  // MARK: Calculating
-  
-  func testItInverts() {
-    XCTAssertEqual(0, 0.inverted())
-    XCTAssertEqual(-1, 1.inverted())
-    XCTAssertEqual(1, -1.inverted())
   }
 }

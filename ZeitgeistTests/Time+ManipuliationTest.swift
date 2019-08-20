@@ -1,7 +1,7 @@
 import XCTest
 @testable import Zeitgeist
 
-class TimeManipuliationTests: XCTestCase {
+class Time_ManipuliationTest : XCTestCase {
   func testTrim() {
     XCTAssertEqual(Time(2018, 7, 14, 15, 8, 0), Time(2018, 7, 14, 15, 8, 3).trimmed(to: .second))
     XCTAssertEqual(Time(2018, 7, 14), Time(2018, 7, 14, 15, 8, 3).trimmed(to: .day))

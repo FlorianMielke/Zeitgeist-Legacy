@@ -1,7 +1,7 @@
 import XCTest
 @testable import Zeitgeist
 
-class TimeComponentTests: XCTestCase {
+class Time_ComponentTest : XCTestCase {
   func testComponents() {
     let time = Time(2018, 2, 1, 12, 4, 15)
     

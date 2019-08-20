@@ -1,7 +1,7 @@
 import XCTest
 @testable import Zeitgeist
 
-class TimeTests: XCTestCase {  
+class Time_DurationTest : XCTestCase {  
   func testDurationToOtherTime() {
     let subject = Time(2018, 1, 1, 1, 1, 0)
     let other = Time(2018, 1, 1, 1, 5, 0)

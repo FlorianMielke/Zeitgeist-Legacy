@@ -30,13 +30,18 @@
 		1758340E207D04C5002E2053 /* TravelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758340D207D04C5002E2053 /* TravelTest.swift */; };
 		1758D9B5219363F200E2E83D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758D9B4219363F200E2E83D /* String+Localized.swift */; };
 		1758D9B6219363F200E2E83D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758D9B4219363F200E2E83D /* String+Localized.swift */; };
-		175F9AC021DFE3880045D785 /* Time+ComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9ABF21DFE3880045D785 /* Time+ComponentTests.swift */; };
-		17682BC12174AC7300226BCA /* Time+RoundingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17682BC02174AC7300226BCA /* Time+RoundingTests.swift */; };
-		178389082065AAA300FA4EB6 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178389072065AAA300FA4EB6 /* TimeTests.swift */; };
+		175F9AC021DFE3880045D785 /* Time+ComponentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9ABF21DFE3880045D785 /* Time+ComponentTest.swift */; };
+		17682BC12174AC7300226BCA /* Time+RoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17682BC02174AC7300226BCA /* Time+RoundingTest.swift */; };
+		178389082065AAA300FA4EB6 /* Time+DurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178389072065AAA300FA4EB6 /* Time+DurationTest.swift */; };
 		17B0CA42230BFF280082E6CD /* PersonNameComponents+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA41230BFEE00082E6CD /* PersonNameComponents+Defaults.swift */; };
+		17B0CA45230C000F0082E6CD /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA44230C000F0082E6CD /* Email.swift */; };
+		17B0CA47230C01C50082E6CD /* NSPredicate+Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA46230C01C50082E6CD /* NSPredicate+Email.swift */; };
+		17B0CA4A230C07EC0082E6CD /* NSPredicate+EmailTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA49230C07EC0082E6CD /* NSPredicate+EmailTest.swift */; };
+		17B0CA4C230C08EF0082E6CD /* Int+RoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA4B230C08EF0082E6CD /* Int+RoundingTest.swift */; };
+		17B0CA4E230C09220082E6CD /* Int+CalculationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA4D230C09220082E6CD /* Int+CalculationTest.swift */; };
 		17B1D7F1206E94EB0083E534 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F0206E94EB0083E534 /* Int.swift */; };
-		17B1D7F3206EB4790083E534 /* IntTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F2206EB4790083E534 /* IntTest.swift */; };
-		17B822E021DF928000EBF9C9 /* Time+ManipuliationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B822DF21DF928000EBF9C9 /* Time+ManipuliationTests.swift */; };
+		17B1D7F3206EB4790083E534 /* Int+EnumeratingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F2206EB4790083E534 /* Int+EnumeratingTest.swift */; };
+		17B822E021DF928000EBF9C9 /* Time+ManipuliationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B822DF21DF928000EBF9C9 /* Time+ManipuliationTest.swift */; };
 		17B86778217FA9000015A29E /* UTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B86777217FA9000015A29E /* UTC.swift */; };
 		17B86779217FA9000015A29E /* UTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B86777217FA9000015A29E /* UTC.swift */; };
 		17B8EEBA206407B300D2724E /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8EEB9206407B300D2724E /* Duration.swift */; };
@@ -76,13 +81,18 @@
 		17515A80206403A5003CB03B /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		1758340D207D04C5002E2053 /* TravelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTest.swift; sourceTree = "<group>"; };
 		1758D9B4219363F200E2E83D /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
-		175F9ABF21DFE3880045D785 /* Time+ComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+ComponentTests.swift"; sourceTree = "<group>"; };
-		17682BC02174AC7300226BCA /* Time+RoundingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+RoundingTests.swift"; sourceTree = "<group>"; };
-		178389072065AAA300FA4EB6 /* TimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTests.swift; sourceTree = "<group>"; };
+		175F9ABF21DFE3880045D785 /* Time+ComponentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+ComponentTest.swift"; sourceTree = "<group>"; };
+		17682BC02174AC7300226BCA /* Time+RoundingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+RoundingTest.swift"; sourceTree = "<group>"; };
+		178389072065AAA300FA4EB6 /* Time+DurationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+DurationTest.swift"; sourceTree = "<group>"; };
 		17B0CA41230BFEE00082E6CD /* PersonNameComponents+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonNameComponents+Defaults.swift"; sourceTree = "<group>"; };
+		17B0CA44230C000F0082E6CD /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		17B0CA46230C01C50082E6CD /* NSPredicate+Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+Email.swift"; sourceTree = "<group>"; };
+		17B0CA49230C07EC0082E6CD /* NSPredicate+EmailTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+EmailTest.swift"; sourceTree = "<group>"; };
+		17B0CA4B230C08EF0082E6CD /* Int+RoundingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+RoundingTest.swift"; sourceTree = "<group>"; };
+		17B0CA4D230C09220082E6CD /* Int+CalculationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CalculationTest.swift"; sourceTree = "<group>"; };
 		17B1D7F0206E94EB0083E534 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
-		17B1D7F2206EB4790083E534 /* IntTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntTest.swift; sourceTree = "<group>"; };
-		17B822DF21DF928000EBF9C9 /* Time+ManipuliationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+ManipuliationTests.swift"; sourceTree = "<group>"; };
+		17B1D7F2206EB4790083E534 /* Int+EnumeratingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+EnumeratingTest.swift"; sourceTree = "<group>"; };
+		17B822DF21DF928000EBF9C9 /* Time+ManipuliationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+ManipuliationTest.swift"; sourceTree = "<group>"; };
 		17B86777217FA9000015A29E /* UTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTC.swift; sourceTree = "<group>"; };
 		17B8EEB9206407B300D2724E /* Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
 		17D14B1B2174A80B000B8A5D /* Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rounding.swift; sourceTree = "<group>"; };
@@ -147,12 +157,13 @@
 		17515A6820640392003CB03B /* Zeitgeist */ = {
 			isa = PBXGroup;
 			children = (
-				17B0CA3E230BFECF0082E6CD /* Foundation */,
 				17682BC22174C95C00226BCA /* Common */,
+				17B0CA3E230BFECF0082E6CD /* Foundation */,
 				1765D6CC206EBF9700DBC69B /* Numeric */,
 				1758D9AE219360C800E2E83D /* Resources */,
 				17B8EEB72064070000D2724E /* Supporting Files */,
 				1765D6C9206EBF3D00DBC69B /* Time */,
+				17B0CA43230C00010082E6CD /* Value Types */,
 			);
 			path = Zeitgeist;
 			sourceTree = "<group>";
@@ -160,6 +171,7 @@
 		17515A7320640392003CB03B /* ZeitgeistTests */ = {
 			isa = PBXGroup;
 			children = (
+				17B0CA48230C07BF0082E6CD /* Foundation */,
 				1765D6CB206EBF8300DBC69B /* Numeric */,
 				17B8EEB82064070B00D2724E /* Supporting Files */,
 				1765D6CA206EBF4400DBC69B /* Time */,
@@ -194,10 +206,10 @@
 				1745A5A1211C3EE900B5D51C /* DurationTest.swift */,
 				1729A65620641D38003EDAB5 /* Int+DurationTest.swift */,
 				1729A65220641C40003EDAB5 /* PeriodTest.swift */,
-				175F9ABF21DFE3880045D785 /* Time+ComponentTests.swift */,
-				17682BC02174AC7300226BCA /* Time+RoundingTests.swift */,
-				17B822DF21DF928000EBF9C9 /* Time+ManipuliationTests.swift */,
-				178389072065AAA300FA4EB6 /* TimeTests.swift */,
+				175F9ABF21DFE3880045D785 /* Time+ComponentTest.swift */,
+				17682BC02174AC7300226BCA /* Time+RoundingTest.swift */,
+				17B822DF21DF928000EBF9C9 /* Time+ManipuliationTest.swift */,
+				178389072065AAA300FA4EB6 /* Time+DurationTest.swift */,
 				1758340D207D04C5002E2053 /* TravelTest.swift */,
 			);
 			name = Time;
@@ -206,7 +218,9 @@
 		1765D6CB206EBF8300DBC69B /* Numeric */ = {
 			isa = PBXGroup;
 			children = (
-				17B1D7F2206EB4790083E534 /* IntTest.swift */,
+				17B0CA4D230C09220082E6CD /* Int+CalculationTest.swift */,
+				17B1D7F2206EB4790083E534 /* Int+EnumeratingTest.swift */,
+				17B0CA4B230C08EF0082E6CD /* Int+RoundingTest.swift */,
 			);
 			name = Numeric;
 			sourceTree = "<group>";
@@ -233,7 +247,24 @@
 		17B0CA3E230BFECF0082E6CD /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				17B0CA46230C01C50082E6CD /* NSPredicate+Email.swift */,
 				17B0CA41230BFEE00082E6CD /* PersonNameComponents+Defaults.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		17B0CA43230C00010082E6CD /* Value Types */ = {
+			isa = PBXGroup;
+			children = (
+				17B0CA44230C000F0082E6CD /* Email.swift */,
+			);
+			name = "Value Types";
+			sourceTree = "<group>";
+		};
+		17B0CA48230C07BF0082E6CD /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				17B0CA49230C07EC0082E6CD /* NSPredicate+EmailTest.swift */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -432,6 +463,8 @@
 				1745A5A7211C54BF00B5D51C /* Travel.swift in Sources */,
 				17B1D7F1206E94EB0083E534 /* Int.swift in Sources */,
 				17D14B1C2174A80B000B8A5D /* Rounding.swift in Sources */,
+				17B0CA45230C000F0082E6CD /* Email.swift in Sources */,
+				17B0CA47230C01C50082E6CD /* NSPredicate+Email.swift in Sources */,
 				1745A5A0211C3E7D00B5D51C /* Int+Duration.swift in Sources */,
 				172614E4219471E100A06556 /* Localizable.swift in Sources */,
 			);
@@ -442,14 +475,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1729A65320641C40003EDAB5 /* PeriodTest.swift in Sources */,
-				17682BC12174AC7300226BCA /* Time+RoundingTests.swift in Sources */,
+				17B0CA4C230C08EF0082E6CD /* Int+RoundingTest.swift in Sources */,
+				17682BC12174AC7300226BCA /* Time+RoundingTest.swift in Sources */,
 				1745A5A2211C3EE900B5D51C /* DurationTest.swift in Sources */,
-				17B1D7F3206EB4790083E534 /* IntTest.swift in Sources */,
+				17B1D7F3206EB4790083E534 /* Int+EnumeratingTest.swift in Sources */,
 				1758340E207D04C5002E2053 /* TravelTest.swift in Sources */,
 				1729A65720641D38003EDAB5 /* Int+DurationTest.swift in Sources */,
-				175F9AC021DFE3880045D785 /* Time+ComponentTests.swift in Sources */,
-				17B822E021DF928000EBF9C9 /* Time+ManipuliationTests.swift in Sources */,
-				178389082065AAA300FA4EB6 /* TimeTests.swift in Sources */,
+				175F9AC021DFE3880045D785 /* Time+ComponentTest.swift in Sources */,
+				17B0CA4A230C07EC0082E6CD /* NSPredicate+EmailTest.swift in Sources */,
+				17B0CA4E230C09220082E6CD /* Int+CalculationTest.swift in Sources */,
+				17B822E021DF928000EBF9C9 /* Time+ManipuliationTest.swift in Sources */,
+				178389082065AAA300FA4EB6 /* Time+DurationTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
