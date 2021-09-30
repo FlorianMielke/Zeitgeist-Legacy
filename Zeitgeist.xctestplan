@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "C49725C5-DBCD-4197-A531-B7811FA945C8",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Zeitgeist.xcodeproj",
+      "identifier" : "17515A6520640392003CB03B",
+      "name" : "Zeitgeist"
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Zeitgeist.xcodeproj",
+        "identifier" : "17515A6E20640392003CB03B",
+        "name" : "ZeitgeistTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -60,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170254982705A9B10057D16B /* Zeitgeist.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Zeitgeist.xctestplan; sourceTree = "<group>"; };
 		17073128219486B600483297 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ZeitgeistLocalizable.strings; sourceTree = "<group>"; };
 		1707312A219486CE00483297 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ZeitgeistLocalizable.strings; sourceTree = "<group>"; };
 		171BD2B7211DBAE900A116F7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -124,6 +125,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		170254992705A9BA0057D16B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				170254982705A9B10057D16B /* Zeitgeist.xctestplan */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
 		174E682D2163AF34005682EF /* ZeitgeistWatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +144,7 @@
 		17515A5C20640392003CB03B = {
 			isa = PBXGroup;
 			children = (
+				170254992705A9BA0057D16B /* Configuration */,
 				171BD2B8211DBAEE00A116F7 /* LICENSE */,
 				17515A6720640392003CB03B /* Products */,
 				171BD2B7211DBAE900A116F7 /* README.md */,
