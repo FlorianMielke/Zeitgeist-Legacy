@@ -9,15 +9,15 @@ public struct UTCTime: Equatable, Hashable {
 }
 
 extension Calendar {
-  public static var utc: Calendar {
+  public static let utc: Calendar = {
     var calendar = Calendar.current
     calendar.timeZone = TimeZone.utc
     return calendar
-  }
+  }()
 }
 
 public extension TimeZone {
-  static var utc: TimeZone {
+  static let utc: TimeZone = {
     return TimeZone(secondsFromGMT: 0)!
-  }
+  }()
 }
