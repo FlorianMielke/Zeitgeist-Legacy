@@ -23,8 +23,6 @@
 		1758340E207D04C5002E2053 /* TravelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758340D207D04C5002E2053 /* TravelTest.swift */; };
 		175F9AC021DFE3880045D785 /* Time+ComponentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9ABF21DFE3880045D785 /* Time+ComponentTest.swift */; };
 		17682BC12174AC7300226BCA /* Time+RoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17682BC02174AC7300226BCA /* Time+RoundingTest.swift */; };
-		17B0CA42230BFF280082E6CD /* PersonNameComponents+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA41230BFEE00082E6CD /* PersonNameComponents+Defaults.swift */; };
-		17B0CA47230C01C50082E6CD /* NSPredicate+Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA46230C01C50082E6CD /* NSPredicate+Email.swift */; };
 		17B0CA4C230C08EF0082E6CD /* Int+RoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA4B230C08EF0082E6CD /* Int+RoundingTest.swift */; };
 		17B0CA4E230C09220082E6CD /* Int+CalculationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA4D230C09220082E6CD /* Int+CalculationTest.swift */; };
 		17B1D7F1206E94EB0083E534 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D7F0206E94EB0083E534 /* Int.swift */; };
@@ -66,8 +64,6 @@
 		1758340D207D04C5002E2053 /* TravelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTest.swift; sourceTree = "<group>"; };
 		175F9ABF21DFE3880045D785 /* Time+ComponentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+ComponentTest.swift"; sourceTree = "<group>"; };
 		17682BC02174AC7300226BCA /* Time+RoundingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+RoundingTest.swift"; sourceTree = "<group>"; };
-		17B0CA41230BFEE00082E6CD /* PersonNameComponents+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonNameComponents+Defaults.swift"; sourceTree = "<group>"; };
-		17B0CA46230C01C50082E6CD /* NSPredicate+Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+Email.swift"; sourceTree = "<group>"; };
 		17B0CA4B230C08EF0082E6CD /* Int+RoundingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+RoundingTest.swift"; sourceTree = "<group>"; };
 		17B0CA4D230C09220082E6CD /* Int+CalculationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CalculationTest.swift"; sourceTree = "<group>"; };
 		17B1D7F0206E94EB0083E534 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
@@ -146,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				17682BC22174C95C00226BCA /* Common */,
-				17B0CA3E230BFECF0082E6CD /* Foundation */,
 				1765D6CC206EBF9700DBC69B /* Numeric */,
 				1758D9AE219360C800E2E83D /* Resources */,
 				17B8EEB72064070000D2724E /* Supporting Files */,
@@ -221,15 +216,6 @@
 				172614DE21946E5700A06556 /* Zeitgeist.swift */,
 			);
 			name = Common;
-			sourceTree = "<group>";
-		};
-		17B0CA3E230BFECF0082E6CD /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				17B0CA46230C01C50082E6CD /* NSPredicate+Email.swift */,
-				17B0CA41230BFEE00082E6CD /* PersonNameComponents+Defaults.swift */,
-			);
-			name = Foundation;
 			sourceTree = "<group>";
 		};
 		17B8EEB72064070000D2724E /* Supporting Files */ = {
@@ -414,12 +400,10 @@
 			files = (
 				17515A81206403A5003CB03B /* Time.swift in Sources */,
 				172614DF21946E5700A06556 /* Zeitgeist.swift in Sources */,
-				17B0CA42230BFF280082E6CD /* PersonNameComponents+Defaults.swift in Sources */,
 				17B86778217FA9000015A29E /* UTC.swift in Sources */,
 				1745A5A7211C54BF00B5D51C /* Travel.swift in Sources */,
 				17B1D7F1206E94EB0083E534 /* Int.swift in Sources */,
 				17D14B1C2174A80B000B8A5D /* Rounding.swift in Sources */,
-				17B0CA47230C01C50082E6CD /* NSPredicate+Email.swift in Sources */,
 				1745A5A0211C3E7D00B5D51C /* Int+Duration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

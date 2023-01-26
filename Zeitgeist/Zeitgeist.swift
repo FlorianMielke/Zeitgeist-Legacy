@@ -1,7 +1,6 @@
 import Foundation
 
 class Zeitgeist {
-  static var bundle: Bundle {
-    return Bundle(for: Zeitgeist.self)
-  }
+  static let bundle = Bundle(for: Zeitgeist.self)
+  static let localizableTableName = "ZeitgeistLocalizable"
 }
