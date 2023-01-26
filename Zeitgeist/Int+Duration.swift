@@ -1,33 +1,25 @@
 public extension Int {
-  var seconds: Duration {
-    return Duration(Duration.Defaults.second.rawValue * self)
+  var second: Int {
+    self
   }
   
-  var second: Duration {
-    return self.seconds
+  var seconds: Int {
+    second
   }
   
-  var minutes: Duration {
-    return Duration(Duration.Defaults.minute.rawValue * self)
+  var minute: Int {
+    self * 60.seconds
   }
   
-  var minute: Duration {
-    return self.minutes
+  var minutes: Int {
+    minute
   }
   
-  var hours: Duration {
-    return Duration(Duration.Defaults.hour.rawValue * self)
+  var hour: Int {
+    self * 60.minutes
   }
   
-  var hour: Duration {
-    return self.hours
-  }
-  
-  var days: Duration {
-    return Duration(Duration.Defaults.day.rawValue * self)
-  }
-  
-  var day: Duration {
-    return self.days
+  var hours: Int {
+    hour
   }
 }

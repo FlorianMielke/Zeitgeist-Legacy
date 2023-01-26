@@ -38,7 +38,7 @@
       </MacroExpansion>
       <TestPlans>
          <TestPlanReference
-            reference = "container:Zeitgeist.xcodeproj/Zeitgeist.xctestplan"
+            reference = "container:Zeitgeist.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
