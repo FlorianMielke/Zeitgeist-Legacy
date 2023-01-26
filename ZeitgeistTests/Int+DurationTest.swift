@@ -15,4 +15,11 @@ class Int_Duration: XCTestCase {
     XCTAssertEqual(147600.seconds, 41.hours)
     XCTAssertEqual((-838800).seconds, (-233).hours)
   }
+  
+  func testDays() {
+    XCTAssertEqual(0.seconds, 0.days)
+    XCTAssertEqual(86400.seconds, 1.day)
+    XCTAssertEqual(30412800.seconds, 352.days)
+    XCTAssertEqual((-20131200).seconds, (-233).days)
+  }
 }

@@ -22,4 +22,12 @@ public extension Int {
   var hours: Int {
     hour
   }
+  
+  var day: Int {
+    self * 24.hours
+  }
+  
+  var days: Int {
+    day
+  }
 }
