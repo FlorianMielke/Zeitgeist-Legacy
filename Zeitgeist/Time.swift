@@ -41,9 +41,7 @@ public struct Time: Equatable, Hashable, Comparable {
   }
 }
 
-// MARK: -
-// MARK: Comparison
-
+// MARK: - Comparison
 public extension Time {
   func isOnSameDay(_ other: Time) -> Bool {
     return calendar.isDate(self.date, inSameDayAs: other.date)
@@ -54,9 +52,7 @@ public extension Time {
   }
 }
 
-// MARK: -
-// MARK: Components
-
+// MARK: - Components
 public extension Time {
   var year: Int {
     return component(.year)
@@ -91,9 +87,7 @@ public extension Time {
   }
 }
 
-// MARK: -
-// MARK: Rounding
-
+// MARK: - Rounding
 extension Time {
   public func rounded(by rounding: Rounding) -> Time {
     let interval = rounding.interval.rawValue
@@ -112,9 +106,7 @@ extension Time {
   }
 }
 
-// MARK: -
-// MARK: Manipulation
-
+// MARK: - Manipulation
 extension Time {
   public func trimmed(to component: Calendar.Component) -> Time {
     switch component {

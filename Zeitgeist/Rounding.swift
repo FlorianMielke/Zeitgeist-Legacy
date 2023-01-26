@@ -20,7 +20,7 @@ protocol Roundable {
   }
   
   public var localized: String {
-    return "rounding.method.\(description)".localized
+    NSLocalizedString("rounding.method.\(description)", tableName: "ZeitgeistLocalizable", bundle: Zeitgeist.bundle, value: "", comment: "")
   }
 }
 
