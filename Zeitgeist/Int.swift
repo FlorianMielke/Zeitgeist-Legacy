@@ -25,7 +25,7 @@ public extension Int {
 // MARK: Rounding
 
 extension Int: Roundable {
-  func rounded(by rounding: Rounding) -> Int {
+  public func rounded(by rounding: Rounding) -> Int {
     let interval = rounding.interval.rawValue
     switch rounding.method {
     case .nearest:
@@ -37,7 +37,7 @@ extension Int: Roundable {
     }
   }
   
-  func rounded(to roundTo: Int) -> Int {
+  public func rounded(to roundTo: Int) -> Int {
     guard roundTo > 0 else {
       return self
     }
@@ -50,7 +50,7 @@ extension Int: Roundable {
     }
   }
   
-  func roundedUp(to roundTo: Int) -> Int {
+  public func roundedUp(to roundTo: Int) -> Int {
     guard roundTo > 0 else {
       return self
     }
@@ -61,7 +61,7 @@ extension Int: Roundable {
     return self + roundTo - remainder
   }
   
-  func roundedDown(to roundTo: Int) -> Int {
+  public func roundedDown(to roundTo: Int) -> Int {
     guard roundTo > 0 else {
       return self
     }
