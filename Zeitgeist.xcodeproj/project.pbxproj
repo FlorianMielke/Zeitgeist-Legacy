@@ -22,6 +22,7 @@
 		17515A81206403A5003CB03B /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17515A80206403A5003CB03B /* Time.swift */; };
 		1758340E207D04C5002E2053 /* TravelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758340D207D04C5002E2053 /* TravelTest.swift */; };
 		175F9AC021DFE3880045D785 /* Time+ComponentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F9ABF21DFE3880045D785 /* Time+ComponentTest.swift */; };
+		17604E82299540C500D1021F /* TimeInterval+Ago.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17604E81299540C500D1021F /* TimeInterval+Ago.swift */; };
 		17682BC12174AC7300226BCA /* Time+RoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17682BC02174AC7300226BCA /* Time+RoundingTest.swift */; };
 		17B0CA4C230C08EF0082E6CD /* Int+RoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA4B230C08EF0082E6CD /* Int+RoundingTest.swift */; };
 		17B0CA4E230C09220082E6CD /* Int+CalculationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B0CA4D230C09220082E6CD /* Int+CalculationTest.swift */; };
@@ -63,6 +64,7 @@
 		17515A80206403A5003CB03B /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		1758340D207D04C5002E2053 /* TravelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTest.swift; sourceTree = "<group>"; };
 		175F9ABF21DFE3880045D785 /* Time+ComponentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+ComponentTest.swift"; sourceTree = "<group>"; };
+		17604E81299540C500D1021F /* TimeInterval+Ago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Ago.swift"; sourceTree = "<group>"; };
 		17682BC02174AC7300226BCA /* Time+RoundingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Time+RoundingTest.swift"; sourceTree = "<group>"; };
 		17B0CA4B230C08EF0082E6CD /* Int+RoundingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+RoundingTest.swift"; sourceTree = "<group>"; };
 		17B0CA4D230C09220082E6CD /* Int+CalculationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CalculationTest.swift"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			children = (
 				1745A59F211C3E7D00B5D51C /* Int+Duration.swift */,
 				17515A80206403A5003CB03B /* Time.swift */,
+				17604E81299540C500D1021F /* TimeInterval+Ago.swift */,
 				1745A5A6211C54BF00B5D51C /* Travel.swift */,
 				17B86777217FA9000015A29E /* UTC.swift */,
 			);
@@ -405,6 +408,7 @@
 				17B1D7F1206E94EB0083E534 /* Int.swift in Sources */,
 				17D14B1C2174A80B000B8A5D /* Rounding.swift in Sources */,
 				1745A5A0211C3E7D00B5D51C /* Int+Duration.swift in Sources */,
+				17604E82299540C500D1021F /* TimeInterval+Ago.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
