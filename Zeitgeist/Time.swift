@@ -4,15 +4,15 @@ public struct Time: Equatable, Hashable, Comparable {
   public let calendar: Calendar
   public let date: Date
   public var timeZone: TimeZone {
-    return calendar.timeZone
+    calendar.timeZone
   }
   
   public static var current: Time {
-    return Time()
+    Time()
   }
   
   public static func current(calendar: Calendar) -> Time {
-    return Time(calendar: calendar)
+    Time(calendar: calendar)
   }
   
   public static func currentTime(at date: Time, calendar: Calendar = .current) -> Time {
@@ -44,46 +44,46 @@ public struct Time: Equatable, Hashable, Comparable {
 // MARK: - Comparison
 public extension Time {
   func isOnSameDay(_ other: Time) -> Bool {
-    return calendar.isDate(self.date, inSameDayAs: other.date)
+    calendar.isDate(self.date, inSameDayAs: other.date)
   }
   
   static func <(lhs: Time, rhs: Time) -> Bool {
-    return lhs.date < rhs.date
+    lhs.date < rhs.date
   }
 }
 
 // MARK: - Components
 public extension Time {
   var year: Int {
-    return component(.year)
+    component(.year)
   }
   
   var month: Int {
-    return component(.month)
+    component(.month)
   }
   
   var day: Int {
-    return component(.day)
+    component(.day)
   }
   
   var hour: Int {
-    return component(.hour)
+    component(.hour)
   }
   
   var minute: Int {
-    return component(.minute)
+    component(.minute)
   }
   
   var second: Int {
-    return component(.second)
+    component(.second)
   }
   
   func component(_ component: Calendar.Component) -> Int {
-    return calendar.component(component, from: date)
+    calendar.component(component, from: date)
   }
   
   var isUTC: Bool {
-    return timeZone == .utc
+    timeZone == .utc
   }
 }
 
@@ -118,11 +118,11 @@ extension Time {
   }
   
   public func components(_ components: Set<Calendar.Component>) -> DateComponents {
-    return calendar.dateComponents(components, from: date)
+    calendar.dateComponents(components, from: date)
   }
   
   public var starts: Time {
-    return Time(at: calendar.startOfDay(for: date), calendar: calendar)
+    Time(at: calendar.startOfDay(for: date), calendar: calendar)
   }
   
   public var ends: Time {
