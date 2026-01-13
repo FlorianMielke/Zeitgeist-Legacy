@@ -466,7 +466,6 @@
 				INFOPLIST_FILE = ZeitgeistWatch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -498,7 +497,6 @@
 				INFOPLIST_FILE = ZeitgeistWatch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -529,7 +527,6 @@
 				INFOPLIST_FILE = ZeitgeistWatch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -695,7 +692,6 @@
 				INFOPLIST_FILE = Zeitgeist/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -728,7 +724,6 @@
 				INFOPLIST_FILE = Zeitgeist/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -752,7 +747,6 @@
 				DEVELOPMENT_TEAM = 77969RXC6C;
 				INFOPLIST_FILE = ZeitgeistTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -771,7 +765,6 @@
 				DEVELOPMENT_TEAM = 77969RXC6C;
 				INFOPLIST_FILE = ZeitgeistTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -861,7 +854,6 @@
 				INFOPLIST_FILE = Zeitgeist/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
@@ -885,7 +877,6 @@
 				DEVELOPMENT_TEAM = 77969RXC6C;
 				INFOPLIST_FILE = ZeitgeistTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
